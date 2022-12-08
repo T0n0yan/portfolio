@@ -83,6 +83,9 @@
 			1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 			text-transform : uppercase;
 			cursor         : pointer;
+			@include screen-max-width-991{
+			  transform: skewX(15deg);
+			}
 		  }
 		}
 	  }
