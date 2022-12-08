@@ -1,23 +1,18 @@
-
 // #region Flex
 
 .G-flex {
   display : flex;
 }
-
 .G-inline-flex {
-  display: inline-flex;
+  display : inline-flex;
 }
-
 .G-center {
   justify-content : center;
   align-items     : center;
 }
-
 .G-justify-center {
   justify-content : center;
 }
-
 .G-justify-between {
   justify-content : space-between;
 }

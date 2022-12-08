@@ -1,0 +1,100 @@
+@import 'src/assets/style/variables';
+@import 'src/assets/style/mixin';
+
+
+.L-header-container {
+  width                   : 100%;
+  position                : fixed;
+  top                     : 0;
+  left                    : 0;
+  background              : transparent;
+  box-shadow              : 0 4px 30px $box-shadow-black;
+  backdrop-filter         : blur(14px);
+  -webkit-backdrop-filter : blur(14px);
+  z-index                 : 9999;
+  @include screen-max-width-991 {
+	width  : 30%;
+	left   : unset;
+	right  : 0;
+	bottom : 0;
+  }
+
+  .L-header-wrapper {
+	padding : 20px 0;
+	width   : 100%;
+	@include screen-max-width-991 {
+	  flex-direction : column;
+	  align-items    : flex-start;
+	}
+
+
+	.L-logo-container {
+	  width  : max-content;
+	  height : 50px;
+	  @include screen-max-width-991 {
+		align-self : center;
+	  }
+
+	  .L-logo {
+		width  : 70px;
+		height : 50px;
+		cursor : pointer;
+		@include screen-max-width-991 {
+		  width  : 100px;
+		  height : 70px;
+		}
+	  }
+	}
+
+	.L-nav-container {
+	  width : 40%;
+	  @include screen-max-width-991 {
+		width          : 100%;
+		flex-direction : column;
+		align-items    : center;
+	  }
+
+	  .L-nav-lists {
+		width : 70%;
+		@include screen-max-width-991 {
+		  margin         : 200px 0 100px 0;
+		  flex-direction : column;
+		  align-items    : center;
+		}
+
+		li {
+		  font-size : 20px;
+		  @include screen-max-width-991 {
+			font-size : $font-size-40;
+			margin    : 15px 0;
+			padding: 15px 10px;
+			transform:skewX(-15deg);
+
+			&:hover {
+			  background-color : green;
+			}
+		  }
+
+		  a {
+			color       : hotpink;
+			//transform:skewX(15deg);
+			font-size: $font-size-24;
+			text-shadow : 2px 0 black, -2px 0 #000, 0 2px #000, 0 -2px #000,
+			1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+			text-transform : uppercase;
+			cursor         : pointer;
+		  }
+		}
+	  }
+
+	  .L-languages-cont {
+		position : absolute;
+		right    : 10px;
+		@include screen-max-width-991 {
+		  position : unset;
+		}
+	  }
+	}
+  }
+}
+

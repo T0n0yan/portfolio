@@ -1,9 +1,7 @@
 import {createSlice} from '@reduxjs/toolkit'
 
 
-const initialState = {
-
-}
+const initialState = {}
 export const SnippetSlice = createSlice({
     name: 'Snippet',
     initialState,
