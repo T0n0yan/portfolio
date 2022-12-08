@@ -18,7 +18,6 @@
 	right  : 0;
 	bottom : 0;
   }
-
   .L-header-wrapper {
 	padding : 20px 0;
 	width   : 100%;
@@ -26,76 +25,96 @@
 	  flex-direction : column;
 	  align-items    : flex-start;
 	}
+  }
 
-
-	.L-logo-container {
-	  width  : max-content;
-	  height : 50px;
-	  @include screen-max-width-991 {
-		align-self : center;
-	  }
-
-	  .L-logo {
-		width  : 70px;
-		height : 50px;
-		cursor : pointer;
-		@include screen-max-width-991 {
-		  width  : 100px;
-		  height : 70px;
-		}
-	  }
+  .L-logo-container {
+	width  : max-content;
+	height : 50px;
+	@include screen-max-width-991 {
+	  align-self : center;
 	}
 
-	.L-nav-container {
-	  width : 40%;
+	.L-logo {
+	  width      : 70px;
+	  height     : 50px;
+	  cursor     : pointer;
+	  transition : .3s;
+
+	  &:hover {
+		filter : invert(100%);
+	  }
+
 	  @include screen-max-width-991 {
-		width          : 100%;
+		width  : 100px;
+		height : 70px;
+	  }
+	}
+  }
+
+  .L-nav-container {
+	width       : 50%;
+	align-items : center;
+	@include screen-max-width-991 {
+	  width          : 100%;
+	  flex-direction : column;
+	  align-items    : center;
+	}
+
+	.L-nav-lists {
+	  width : 100%;
+	  @include screen-max-width-991 {
+		margin         : 200px 0 100px 0;
 		flex-direction : column;
 		align-items    : center;
 	  }
 
-	  .L-nav-lists {
-		width : 70%;
-		@include screen-max-width-991 {
-		  margin         : 200px 0 100px 0;
-		  flex-direction : column;
-		  align-items    : center;
+	  li {
+		cursor   : pointer;
+		position : relative;
+
+		&:hover {
+		  justify-content: center;
+		  align-items: center;
+		  background-color : green;
 		}
 
-		li {
-		  font-size : 20px;
+		&:before {
+		  content  : '';
+		  position : absolute;
+		  top      : 0;
+		  left     : 5%;
+		  right    : 10%;
+		  bottom   : 1%;
+		  width    : 100%;
+		  height   : 100%;
+		}
+
+		@include screen-max-width-991 {
+		  font-size : $font-size-40;
+		  margin    : 15px 0;
+		  padding   : 15px 10px;
+
+		}
+
+		a {
+		  color          : hotpink;
+		  font-size      : $font-size-32;
+		  text-shadow    : 2px 0 black, -2px 0 #000, 0 2px #000, 0 -2px #000,
+		  1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+		  text-transform : uppercase;
+		  cursor         : pointer;
+		  padding: 10px 20px;
 		  @include screen-max-width-991 {
-			font-size : $font-size-40;
-			margin    : 15px 0;
-			padding: 15px 10px;
-			transform:skewX(-15deg);
-
-			&:hover {
-			  background-color : green;
-			}
-		  }
-
-		  a {
-			color       : hotpink;
-			//transform:skewX(15deg);
-			font-size: $font-size-24;
-			text-shadow : 2px 0 black, -2px 0 #000, 0 2px #000, 0 -2px #000,
-			1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
-			text-transform : uppercase;
-			cursor         : pointer;
-			@include screen-max-width-991{
-			  transform: skewX(15deg);
-			}
 		  }
 		}
 	  }
+	}
 
-	  .L-languages-cont {
-		position : absolute;
-		right    : 10px;
-		@include screen-max-width-991 {
-		  position : unset;
-		}
+	.L-languages-cont {
+	  position : absolute;
+	  right    : 10px;
+	  @include screen-max-width-991 {
+		position : unset;
 	  }
 	}
   }

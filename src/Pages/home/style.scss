@@ -25,7 +25,6 @@
 
 	}
   }
-
   .L-introducing-container {
 	width   : max-content;
 	margin  : 20px auto;
@@ -33,11 +32,12 @@
 
 
 	h1 {
-	  font-size : 72px;
+	  font-size : $font-size-40;
 	  color     : $white;
+	  text-shadow    : 2px 0 black, -2px 0 #000, 0 2px #000, 0 -2px #000,
+	  1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 	}
   }
-
   .L-who-i-am {
 	.L-desc-title {
 	  width : max-content;
@@ -54,4 +54,5 @@
 	  padding-top : 50px;
 	}
   }
+
 }
