@@ -11,31 +11,60 @@
 	height              : 600px;
 	animation           : fade-out 3500ms;
 	animation-fill-mode : forwards;
+	@include screen-max-width-1300 {
+	  width  : 450px;
+	  height : 410px;
+	}
+	@include screen-max-width-991 {
+	  width  : 350px;
+	  height : 320px;
+	}
+	@include screen-max-width-576 {
+	  width  : 300px;
+	  height : 275px;
+	}
   }
 
   .text-typing {
 	margin-top : 100px;
-	font-size  : 200px;
+	@include screen-max-width-1300 {
+	  margin-top : 60px;
+	}
+	@include screen-max-width-991 {
+	  margin-top : 30px;
+	  text-align : center;
+	}
+
 
 	.name {
 	  color                   : rgba(255, 215, 0, 0.66);
 	  font-size               : $font-size-48;
-	  letter-spacing          : 1rem;
-	  margin                  : 1rem auto;
+	  letter-spacing          : 16px;
+	  margin                  : 16px auto;
 	  font-family             : Passion;
 	  font-weight             : 100;
 	  background              : -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.8, #ffffff)) no-repeat;
-	  background              : gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.8, #fff)) no-repeat;
 	  background-size         : 110px 100%;
 	  -webkit-background-clip : text;
 	  background-clip         : text;
 	  animation               : flick 5s infinite;
+	  @include screen-max-width-1300 {
+		font-size      : $font-size-48;
+		letter-spacing : 12px;
+	  }
+	  @include screen-max-width-991 {
+		font-size      : $font-size-36;
+		letter-spacing : 8px;
+	  }
+	  @include screen-max-width-576 {
+		font-size : $font-size-24;
+
+	  }
 
 	}
   }
-
-
 }
+
 @keyframes fade-out {
   0% {
 	opacity : 0;
