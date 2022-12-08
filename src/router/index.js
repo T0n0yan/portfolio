@@ -6,7 +6,7 @@ import Home from "../Pages/home";
 const RouterComponent = () => {
     return (
         <div>
-            <Route exact path={'/'} render={() => <Home/>}/>
+            <Route exact path={'/portfolio'} render={() => <Home/>}/>
             <Route exact path={'/home'} render={() => <Home/>}/>
         </div>);
 };
