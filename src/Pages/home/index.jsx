@@ -12,13 +12,10 @@ const Home = () => {
                         <div className='img G-background-cover' style={{backgroundImage: `url('${img}')`}}/>
                     </div>
                 </div>
-                <div className='L-introducing-container G-flex G-justify-center'>
+                <div className='L-introducing-container G-flex G-justify-center G-flex-column G-align-center'>
                     <h1>Hey ! I'm Davit </h1>
+                    <h2>I'm Front-End Developer</h2>
                 </div>
-                <div className='L-who-i-am G-flex   G-flex-column G-align-center'>
-
-                </div>
-
             </div>
 
         </main>);

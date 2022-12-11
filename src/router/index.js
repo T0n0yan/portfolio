@@ -8,6 +8,7 @@ const RouterComponent = () => {
         <div>
             <Route exact path={'/'} render={() => <Home/>}/>
             <Route exact path={'/home'} render={() => <Home/>}/>
+            <Route exact path={'/about'} render={() => <p>asdasd</p>}/>
         </div>);
 };
 

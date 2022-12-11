@@ -1,6 +1,6 @@
 @import 'src/assets/style/variables';
 @import 'src/assets/style/mixin';
-
+@import 'src/assets/style/fonts';
 
 .L-loading-container {
   width  : 100%;
@@ -41,12 +41,11 @@
 	  font-size               : $font-size-48;
 	  letter-spacing          : 16px;
 	  margin                  : 16px auto;
-	  font-family             : Passion;
 	  font-weight             : 100;
+	  font-family             : Passion;
 	  background              : -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.8, #ffffff)) no-repeat;
 	  background-size         : 110px 100%;
 	  -webkit-background-clip : text;
-	  background-clip         : text;
 	  animation               : flick 5s infinite;
 	  @include screen-max-width-1300 {
 		font-size      : $font-size-48;
@@ -58,9 +57,7 @@
 	  }
 	  @include screen-max-width-576 {
 		font-size : $font-size-24;
-
 	  }
-
 	}
   }
 }

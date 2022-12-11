@@ -1,7 +1,7 @@
 {
   "name": "snippet",
   "version": "0.1.0",
-  "homepage": "https://t0n0yan.github.io/portfolio/",
+  "homepage": "https://t0n0yan.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.4",
