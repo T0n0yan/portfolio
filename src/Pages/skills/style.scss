@@ -1,0 +1,18 @@
+.L-skills-wrapper {
+  padding-top : 200px;
+
+  .L-skills-container {
+	width : 100%;
+
+	.L-skills-box {
+	  width               : 500px;
+	  height              : 600px;
+	  border              : 5px solid red;
+	  border-image-slice  : 1;
+	  border-width        : 5px 5px 15px 5px;
+	  border-image-source : linear-gradient(to left, #743ad5, #d53a9d);
+	}
+
+
+  }
+}

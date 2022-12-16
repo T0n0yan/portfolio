@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './style.scss'
-import { NavLink, useLocation} from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 import logo from '../../assets/images/logo2.svg';
 import hoverSoundMenu from '../../assets/sounds/hover.mp3';
 import logoSound from '../../assets/sounds/checkpoint.mp3';
@@ -9,10 +9,10 @@ const Header = () => {
     const location = useLocation()
     const [click, setClick] = useState(new Audio(hoverSoundMenu))
     const [checkSound, setCheckSound] = useState(new Audio(logoSound))
-    const [menu,setMenu] = useState(false)
+    const [menu, setMenu] = useState(false)
 
 
-    const handleClick =()=> {
+    const handleClick = () => {
         setMenu(!menu)
 
     }
@@ -43,7 +43,7 @@ const Header = () => {
                                 <NavLink to='/about'>About me </NavLink>
                             </li>
                             <li onClick={() => handleMouseHover()}><NavLink
-                                to='/log'>Skills</NavLink></li>
+                                to='/skills'>Skills</NavLink></li>
                             <li onClick={() => handleMouseHover()}><NavLink
                                 to='/aaa'>Projects</NavLink></li>
                             <li onClick={() => handleMouseHover()}><NavLink
