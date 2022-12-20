@@ -1,18 +1,44 @@
+@import '../../assets/style/variables';
+@import '../../assets/style/mixin';
+
+
 .L-skills-wrapper {
   padding-top : 200px;
 
   .L-skills-container {
-	width : 100%;
+	width  : max-content;
+	margin : 0 auto;
 
 	.L-skills-box {
-	  width               : 500px;
-	  height              : 600px;
-	  border              : 5px solid red;
-	  border-image-slice  : 1;
-	  border-width        : 5px 5px 15px 5px;
-	  border-image-source : linear-gradient(to left, #743ad5, #d53a9d);
+	  width                   : 500px;
+	  height                  : 600px;
+	  border-radius           : 25px 0 25px 25px;
+	  border                  : 1px solid white;
+	  background              : rgb(236, 110, 173);
+	  background              : linear-gradient(90deg, rgba(236, 110, 173, 1) 0%, rgba(52, 148, 230, 1) 100%);
+	  /* From https://css.glass */
+	  background              : rgba(255, 255, 255, 0.05);
+	  box-shadow              : 0 4px 30px rgba(0, 0, 0, 0.1);
+	  backdrop-filter         : blur(13.8px);
+	  -webkit-backdrop-filter : blur(13.8px);
+
+	  .L-logo-box {
+		width  : max-content;
+		height : max-content;
+
+		.L-skills-logo {
+		  font-size   : 400px;
+		  padding-top : 20px;
+		}
+
+		.L-skills-title {
+		  padding-top         : 50px;
+		  color               : white;
+		  font-size           : $font-size-40;
+		  -webkit-text-stroke : 2px #000000;
+		  letter-spacing      : 3px;
+		}
+	  }
 	}
-
-
   }
 }

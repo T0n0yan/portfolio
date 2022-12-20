@@ -93,6 +93,7 @@
 		@include screen-max-width-991 {
 		  font-size : $font-size-40;
 		}
+
 		a {
 		  color          : hotpink;
 		  font-size      : $font-size-32;
@@ -106,6 +107,7 @@
 
 		  }
 		}
+
 		.active {
 		  color : $white;
 		}

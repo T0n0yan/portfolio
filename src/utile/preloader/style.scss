@@ -46,7 +46,7 @@
 	  background              : -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.8, #ffffff)) no-repeat;
 	  background-size         : 110px 100%;
 	  -webkit-background-clip : text;
-	  animation               : flick 5s infinite;
+	  animation               : flick 8s ;
 	  @include screen-max-width-1300 {
 		font-size      : $font-size-48;
 		letter-spacing : 12px;

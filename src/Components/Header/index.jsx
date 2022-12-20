@@ -4,27 +4,29 @@ import {NavLink, useLocation} from "react-router-dom";
 import logo from '../../assets/images/logo2.svg';
 import hoverSoundMenu from '../../assets/sounds/hover.mp3';
 import logoSound from '../../assets/sounds/checkpoint.mp3';
+import {useTranslation} from "react-i18next";
+import '../../i18n/i18next'
+
 
 const Header = () => {
+    const {t,i18n} = useTranslation()
     const location = useLocation()
     const [click, setClick] = useState(new Audio(hoverSoundMenu))
     const [checkSound, setCheckSound] = useState(new Audio(logoSound))
     const [menu, setMenu] = useState(false)
 
-
     const handleClick = () => {
         setMenu(!menu)
-
     }
-
     const logoSoudeOn = () => {
         checkSound.play()
     }
-
     const handleMouseHover = () => {
         click.play()
     }
-
+    const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang)
+    }
     return (
         <>
             <div className='L-burger G-flex' onClick={handleClick}>
@@ -40,21 +42,21 @@ const Header = () => {
                     <nav className='L-nav-container  G-flex G-justify-end '>
                         <ul className='L-nav-lists G-flex G-align-center G-justify-between '>
                             <li onClick={() => handleMouseHover()}>
-                                <NavLink to='/about'>About me </NavLink>
+                                <NavLink to='/about'>{t('About Me')}</NavLink>
                             </li>
-                            <li onClick={() => handleMouseHover()}><NavLink
-                                to='/skills'>Skills</NavLink></li>
-                            <li onClick={() => handleMouseHover()}><NavLink
-                                to='/aaa'>Projects</NavLink></li>
-                            <li onClick={() => handleMouseHover()}><NavLink
-                                to='/sss'>Contacts</NavLink></li>
+                            <li onClick={() => handleMouseHover()}>
+                                <NavLink to='/skills'>Skills</NavLink></li>
+                            <li onClick={() => handleMouseHover()}>
+                                <NavLink to='/projects'>Projects</NavLink></li>
+                            <li onClick={() => handleMouseHover()}>
+                                <NavLink to='/contacts'>Contacts</NavLink></li>
                         </ul>
                     </nav>
                     <div className='L-languages-cont G-flex  G-align-center G-justify-center G-flex-column'>
                         <select>
-                            <option value="Armenia">AM</option>
-                            <option value="Russia">RU</option>
-                            <option value="English">EN</option>
+                            <option value="Armenia" onChange={()=> changeLanguage('am')}>HY</option>
+                            <option value="Russia" onChange={()=> changeLanguage('ru')}>RU</option>
+                            <option value="English" onChange={()=> changeLanguage('en')}>EN</option>
                         </select>
                     </div>
                 </div>

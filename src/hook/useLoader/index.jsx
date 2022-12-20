@@ -1,22 +1,20 @@
-import {useEffect,  useState} from "react";
+import {useEffect, useState} from "react";
 import reloadSound from '../../assets/sounds/reloadeSound.mp3'
-
-
 
 
 const usePreloader = () => {
     const [loading, setLoading] = useState(false)
-    const [testSound,setTestSound] = useState(new Audio(reloadSound))
+    const [testSound, setTestSound] = useState(new Audio(reloadSound))
     useEffect(() => {
-        testSound.play()
-        setLoading(true)
+        setTestSound(() => testSound.play())
+        setLoading(!loading)
         setTimeout(() => {
+            setTestSound(() => testSound.pause())
             setLoading(false)
-            testSound.pause()
-        }, 1000)
+        }, 10000)
     }, [])
 
 
-    return {loading,testSound}
+    return {loading, testSound}
 }
 export default usePreloader

@@ -3,7 +3,8 @@ import React from 'react';
 import myImg from '../../assets/images/My Img.jpg'
 
 const AboutMe = () => {
-    return (<main className='L-about-me-container'>
+    return (
+        <main className='L-about-me-container'>
             <div className='G-container L-about-wrapper'>
                 <div className='L-about-description G-flex G-justify-between'>
                     <div className='L-img-container'>

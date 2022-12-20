@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import useLoader from "./hook/useLoader";
 import Preloader from "./utile/preloader";
 import {useLocation} from "react-router-dom";
+import './assets/icons/style.scss'
 
 function App() {
     const location = useLocation()
