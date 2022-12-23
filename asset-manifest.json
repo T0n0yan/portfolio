@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7fa50e86.css",
-    "main.js": "/portfolio/static/js/main.3d5611c0.js",
+    "main.css": "/portfolio/static/css/main.186ba5bd.css",
+    "main.js": "/portfolio/static/js/main.c697efe3.js",
+    "static/media/naviagtorReloadFull.jpg": "/portfolio/static/media/naviagtorReloadFull.ebf1a826efe200288624.jpg",
     "static/media/reloadeSound.mp3": "/portfolio/static/media/reloadeSound.082ce57f1d2025002ad5.mp3",
     "static/media/My Img.jpg": "/portfolio/static/media/My Img.3316a6fa8cff68ac77d1.jpg",
-    "static/media/_21_vice-city-background_Image-Wiki-background-Vice-City-Roleplay-Community-Wiki-.jpg": "/portfolio/static/media/_21_vice-city-background_Image-Wiki-background-Vice-City-Roleplay-Community-Wiki-.6c33bd8f49dfb5eb02f2.jpg",
     "static/media/checkpoint.mp3": "/portfolio/static/media/checkpoint.d0dc17d746aafd292f1e.mp3",
     "static/media/Reload Logo.png": "/portfolio/static/media/Reload Logo.13beb8afb6d315f28e03.png",
     "static/media/hover.mp3": "/portfolio/static/media/hover.a86cdd3fb92216ed1b55.mp3",
@@ -21,11 +21,11 @@
     "static/media/icomoon.ttf?j1lfg": "/portfolio/static/media/icomoon.f244a3293899008b61ef.ttf",
     "index.html": "/portfolio/index.html",
     "static/media/getFetch.cjs": "/portfolio/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.7fa50e86.css.map": "/portfolio/static/css/main.7fa50e86.css.map",
-    "main.3d5611c0.js.map": "/portfolio/static/js/main.3d5611c0.js.map"
+    "main.186ba5bd.css.map": "/portfolio/static/css/main.186ba5bd.css.map",
+    "main.c697efe3.js.map": "/portfolio/static/js/main.c697efe3.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fa50e86.css",
-    "static/js/main.3d5611c0.js"
+    "static/css/main.186ba5bd.css",
+    "static/js/main.c697efe3.js"
   ]
 }
