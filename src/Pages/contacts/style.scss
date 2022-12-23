@@ -15,46 +15,50 @@
 
 	.L-map-box {
 	  width         : 100%;
+	  position      : relative;
 	  max-width     : 500px;
 	  height        : 500px;
-	  border        : 10px solid #f59dda;
+	  border        : 25px solid #f59dda;
 	  border-radius : 50%;
 	  margin        : 0 auto;
 	  overflow      : hidden;
 
 	  .L-map {
-		width  : 600px;
-		height : 600px;
+		width     : 550px;
+		height    : 550px;
+		transform : scale(1.2);
 	  }
 	}
 
 	.L-map-compass {
-	  width            : 30px;
-	  height           : 30px;
+	  width            : 50px;
+	  height           : 50px;
 	  border-radius    : 50%;
 	  position         : absolute;
-	  font-family      : Passion, serif;
+	  font-family      : SansSerif, serif;
 	  top              : -10px;
 	  background-color : black;
 	  color            : white;
-	  font-size        : 30px;
+	  font-size        : 40px;
+	  z-index          : 1;
 	}
 
 	.L-map-mission {
 	  position            : absolute;
-	  left                : -5px;
+	  left                : -15px;
 	  color               : white;
 	  font-family         : Passion, serif;
 	  -webkit-text-stroke : 2px black;
-	  font-size           : 40px;
+	  font-size           : 80px;
+	  z-index             : 1;
 	}
 
   }
 
   .L-contacts-box {
 	width     : max-content;
-	margin    : 50px auto;
-	font-size : 20px;
+	margin    : 35px auto;
+	font-size : 30px;
 
 	.L-tel-number {
 	  .tel {
@@ -63,7 +67,7 @@
 		margin              : 0 10px;
 
 		i {
-		  color: #00ff00;
+		  color        : #00ff00;
 		  font-size    : 25px;
 		  margin-right : 5px;
 		}
@@ -81,5 +85,30 @@
 	  }
 	}
 
+	.L-socials-cont {
+	  margin-top : 15px;
+	  a  {
+		margin : 0 15px;
+		overflow: hidden;
+		transform:scale(1.2);
+	  }
+	  .L-gmail-logo{
+		font-size: 30px;
+		&:hover{
+		  background-color : white;
+		}
+	  }
+	  .Github {
+		color : black;
+		&:hover{
+		  background-color : white;
+		}
+	  }
+	  .L-linkedin-icon{
+		&:hover{
+		  background-color : white;
+		}
+	  }
+	}
   }
 }

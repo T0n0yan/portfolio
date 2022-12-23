@@ -10,7 +10,7 @@ i18n
     .use(initReactI18next)
     .init({
         fallbackLng: 'en',
-        whitelist: ['en', 'ru', 'hy'],
+        whitelist: ['sd', 'ru', 'hy'],
         debug: false,
         detection: {
             order: ["localStorage", "cookie"],

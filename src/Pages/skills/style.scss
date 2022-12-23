@@ -16,23 +16,25 @@
 	  border                  : 1px solid white;
 	  background              : rgb(236, 110, 173);
 	  background              : linear-gradient(90deg, rgba(236, 110, 173, 1) 0%, rgba(52, 148, 230, 1) 100%);
-	  /* From https://css.glass */
 	  background              : rgba(255, 255, 255, 0.05);
 	  box-shadow              : 0 4px 30px rgba(0, 0, 0, 0.1);
 	  backdrop-filter         : blur(13.8px);
 	  -webkit-backdrop-filter : blur(13.8px);
 
 	  .L-logo-box {
-		width  : max-content;
-		height : max-content;
+		width    : max-content;
+		height   : max-content;
+		position : relative;
 
 		.L-skills-logo {
+		  min-height  : 500px;
 		  font-size   : 400px;
 		  padding-top : 20px;
+		  text-align  : center;
+		  margin      : 20px 0;
 		}
 
 		.L-skills-title {
-		  padding-top         : 50px;
 		  color               : white;
 		  font-size           : $font-size-40;
 		  -webkit-text-stroke : 2px #000000;
