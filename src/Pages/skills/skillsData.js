@@ -33,7 +33,7 @@ const   skillsData = [
     {
         id:7,
         name:'redux',
-        title:'React Redux , Thunks and Toolkit'
+        title:' Redux , Thunks , Toolkit'
     },
     {
         id:8,
@@ -50,5 +50,10 @@ const   skillsData = [
         name:'gitlab',
         title:'GitLab'
     },
+    {
+        id:11,
+        name:'photoshop',
+        title:'Adobe Photoshop'
+    }
 ]
 export default skillsData

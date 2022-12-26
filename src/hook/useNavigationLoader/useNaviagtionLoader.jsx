@@ -8,7 +8,7 @@ const useNavigationLoader = () => {
         setIsLoading(true)
         setTimeout(() => {
             setIsLoading(false)
-        }, 750)
+        }, 1800)
     }, [location])
 
 

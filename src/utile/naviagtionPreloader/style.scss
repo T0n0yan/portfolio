@@ -3,10 +3,12 @@
 @import 'src/assets/style/fonts';
 
 .L-loading-bg-container {
-  width            : 100%;
-  height           : 100vh;
-  background-image : url('../../assets/images/naviagtorReloadFull.jpg');
-  background-position :center;
-  background-size : cover;
+  width               : 100%;
+  height              : 100%;
+  background-image    : url('../../assets/images/naviagtorReloadFulll.jpg');
+  background-position : center;
+  background-size     : cover;
+  z-index             : 9999;
+  position            : fixed;
 }
 

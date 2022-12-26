@@ -11,7 +11,7 @@ const usePreloader = () => {
         setTimeout(() => {
             setTestSound(() => testSound.pause())
             setLoading(false)
-        }, 10000)
+        }, 1000)
     }, [])
 
 
