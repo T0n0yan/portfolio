@@ -17,15 +17,16 @@ const Skill = () => {
     fade: true,
     swipeToSlide: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2500,
     asNavFor: little,
   };
 
   const settings2 = {
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
     dots: false,
-    centerMode: true,
+    arrows: false,
+    centerMode: false,
     swipeToSlide: true,
     focusOnSelect: true,
     asNavFor: big,

@@ -52,6 +52,11 @@ const   skillsData = [
     },
     {
         id:11,
+        name:'linux',
+        title:'Linux'
+    },
+    {
+        id:12,
         name:'photoshop',
         title:'Adobe Photoshop'
     }

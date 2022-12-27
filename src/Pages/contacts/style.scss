@@ -61,26 +61,28 @@
     right: 20px;
     width: max-content;
     font-size: 30px;
-    border: 1px solid black;
     display: flex;
-    .L-info-block{
+
+    .L-info-block {
       margin-right: 30px;
-      .L-time-container{
-        border: 1px solid red;
+
+      .L-time-container {
         text-align: right;
+        padding-right: 10px;
       }
-  
       .L-tel-number {
         .tel {
           display: flex;
           align-items: center;
+
           p {
-            -webkit-text-stroke: 1px black;
+            -webkit-text-stroke: 1.3px black;
             color: #02f79b;
             margin: 0 10px;
           }
+
           i {
-            color: #00ff00 ;
+            color: #00ff00;
             -webkit-text-stroke: 1px black;
             font-size: 25px;
             margin-right: 5px;
@@ -88,59 +90,89 @@
         }
       }
     }
-    
-    .aaaaa{
+
+    .L-socials-block {
       width: 120px;
-      height: 100px;
-      border: 5px solid black ;
-      border-radius: 15px;
-      .L-socials-cont {
-        margin: 25px;
-        .sliderBlock{
-          border: 1px solid red;
-          width: 60px;
-        }
-        a {
-          margin: 0 15px;
-          transform: scale(1.2);
+      height: 120px;
+      background: rgb(253, 133, 253);
+      background: linear-gradient(
+        0deg,
+        rgba(253, 133, 253, 1) 0%,
+        rgba(95, 194, 236, 1) 100%,
+        rgba(58, 189, 252, 1) 100%
+      );
+      border-radius: 0 15px 15px 15px;
+      position: relative;
+      .L-slider-cont {
+        position: absolute;
+        width: 110px;
+        height: 90px;
+        top: 3.5%;
+        left: 3.5%;
+        background: rgba($color: white, $alpha: 0.3);
+        border-radius: 0 15px 15px 15px;
+        box-shadow: 0 0 -15px #0066ff;
+        .sliderBlock {
+          font-size: 60px;
+          animation: socialMedia 3.1s ease-in reverse infinite;
+          a {
+            i {
+              margin-left: 25px;
+              transition: 0.3s;
+
+              &:hover {
+                transform: scale(1.5);
+                transition: 0.3s;
+              }
+            }
+          }
         }
         .Gmail {
           color: black;
-          font-size: 30px;
           padding: 0 2px;
-  
+
           &:hover {
             color: #d14836;
             border-radius: 5px;
             background-color: white;
           }
         }
+
         .Github {
-          color: black;
-          font-size: 30px;
+          color: $black;
           &:hover {
             border-radius: 50px;
             background-color: white;
           }
         }
+
         .Linkedin {
-          color: black;
+          color: $black;
           &:hover {
-            color: #0077b5;
+			border-radius: 5px;
             background-color: white;
           }
         }
+
         .Telegram {
           color: $black;
-          font-size: 25px;
+          transform: scale(1.1);
           &:hover {
-            color: #0066ff;
-            background-color: white;
             border-radius: 50px;
+            background-color: white;
+            color: #0066ff;
           }
         }
       }
     }
-   
+  }
+}
+@keyframes socialMedia {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(360deg);
   }
 }
