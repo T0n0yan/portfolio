@@ -2,12 +2,45 @@ import "./style.scss";
 import React, { useState, useEffect } from "react";
 import bgimage from "../../assets/images/naviagtorReloadFull.jpg";
 import moment from "moment";
+import Slider from "react-slick";
 
 const Contacts = () => {
   const [dateState, setDateState] = useState(new Date());
   useEffect(() => {
     setInterval(() => setDateState(new Date()), 1000);
   }, []);
+
+  const contactSettings = {
+    dots: false,
+    infinite: true,
+    speed: 300,
+    arrows:false,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   return (
     <div
       className="L-contacts-container "
@@ -28,38 +61,43 @@ const Contacts = () => {
           </div>
         </div>
         <div className="L-contacts-box ">
-          <div>
-            <p>
-              {dateState.toLocaleString("en-US", {
-                hour: "numeric",
-                minute: "numeric",
-                hour12: false,
-                second: "2-digit",
-              })}
-            </p>
+          <div className="L-info-block">
+            <div className="L-time-container">
+              <p className="time">
+                {dateState.toLocaleString("en-US", {
+                  hour: "numeric",
+                  minute: "numeric",
+                  hour12: false,
+                  second: "2-digit",
+                })}
+              </p>
+            </div>
+            <div className="L-tel-number ">
+              <a className="tel" href="tel:+37498003770">
+                <i className=" icon-phone " />
+                <p>+374 98 003 770</p>
+              </a>
+            </div>
           </div>
-          <div className="L-tel-number ">
-            <a className="tel" href="tel:+37498003770">
-              {" "}
-              <i className=" icon-phone " />
-              +374 98 003 770{" "}
-            </a>
-
-            <a className="telegram" href="https://t.me/t0n0yan" target="_blank">
-              <i className="icon-telegram" />
-            </a>
-          </div>
+          <div className="aaaaa">
           <div className="L-socials-cont">
-            <a href="mailto:dav.tonoyan.90@gmail.com">
-              <i className="L-gmail-logo icon-gmail" />
-            </a>
-            <a href="https://github.com/T0n0yan" target="_blank">
-              <i className="Github icon-github" />
-            </a>
-            <a href="https://www.linkedin.com/in/t0n0yan/" target="_blank">
-              <i className="L-linkedin-icon icon-linkedin" />
-            </a>
+            <Slider {...contactSettings} className='sliderBlock'>
+              <a href="mailto:dav.tonoyan.90@gmail.com">
+                <i className="Gmail icon-gmail" />
+              </a>
+              <a href="https://github.com/T0n0yan" target="_blank">
+                <i className="Github icon-github" />
+              </a>
+              <a href="https://www.linkedin.com/in/t0n0yan/" target="_blank">
+                <i className="Linkedin icon-linkedin" />
+              </a>
+              <a href="https://t.me/t0n0yan" target="_blank">
+                <i className="Telegram icon-telegram" />
+              </a>
+            </Slider>
           </div>
+          </div>
+       
         </div>
       </div>
     </div>
