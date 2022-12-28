@@ -1,7 +1,6 @@
 import "./style.scss";
 import React, {useState, useEffect} from "react";
 import bgimage from "../../assets/images/naviagtorReloadFull.jpg";
-import moment from "moment";
 import Slider from "react-slick";
 
 const Contacts = () => {
@@ -81,19 +80,19 @@ const Contacts = () => {
                     <div className="L-socials-block">
                         <div className="L-slider-cont">
                             <Slider {...contactSettings} className='sliderBlock'>
-                                <a href="mailto:dav.tonoyan.90@gmail.com">
+                                <a href="mailto:dav.tonoyan.90@gmail.com" target='_blank' rel="noreferrer">
                                     <i className="Gmail icon-gmail"/>
                                 </a>
-                                <a href="mailto:david.tonoyan.1999@mail.ru">
+                                <a href="mailto:david.tonoyan.1999@mail.ru" target='_blank'  rel="noreferrer">
                                     <i className="Mail icon-mail-dot-ru"/>
                                 </a>
-                                <a href="https://github.com/T0n0yan" target="_blank">
+                                <a href="https://github.com/T0n0yan" target="_blank"  rel="noreferrer">
                                     <i className="Github icon-github"/>
                                 </a>
-                                <a href="https://www.linkedin.com/in/t0n0yan/" target="_blank">
+                                <a href="https://www.linkedin.com/in/t0n0yan/" target="_blank"  rel="noreferrer">
                                     <i className="Linkedin icon-linkedin"/>
                                 </a>
-                                <a href="https://t.me/t0n0yan" target="_blank">
+                                <a href="https://t.me/t0n0yan" target="_blank"  rel="noreferrer">
                                     <i className="Telegram icon-telegram"/>
                                 </a>
                             </Slider>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.scss'
-import useNavigationLoader from "../../hook/useNavigationLoader/useNaviagtionLoader";
+import useNavigationLoader from "../../hook/useNavigationLoader/useNavigationLoader";
 
 const Preloader = () => {
     const {isLoading} = useNavigationLoader()

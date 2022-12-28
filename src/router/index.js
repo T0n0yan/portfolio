@@ -1,24 +1,26 @@
 import React from 'react';
 import {Route, Redirect} from "react-router-dom";
 import Home from "../Pages/home";
-import AboutMe from "../Pages/about-me";
+import About from "../Pages/about";
 import Skill from "../Pages/skills";
 import Contacts from "../Pages/contacts";
-import useNavigationLoader from "../hook/useNavigationLoader/useNaviagtionLoader";
-import NaviagtionPreloader from "../utile/naviagtionPreloader";
+import Projects from "../Pages/projects";
+import useNavigationLoader from "../hook/useNavigationLoader/useNavigationLoader";
+import NavigationPreloader from "../utile/navigationPreloader";
 
 
 const RouterComponent = () => {
     const {isLoading} = useNavigationLoader()
     if (isLoading) {
-        return <NaviagtionPreloader />
+        return <NavigationPreloader />
     }
     return (
         <div>
             <Route exact path={'/'} render={() => <Home/>}/>
             <Route exact path={'/home'} render={() => <Home/>}/>
-            <Route exact path={'/about'} render={() => <AboutMe/>}/>
+            <Route exact path={'/about'} render={() => <About/>}/>
             <Route exact path={'/skills'} render={() => <Skill/>}/>
+            <Route exact path={'/projects'} render={() => <Projects/>}/>
             <Route exact path={'/contacts'} render={() => <Contacts/>}/>
         </div>);
 };

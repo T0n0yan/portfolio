@@ -2,7 +2,7 @@ import './style.scss'
 import React from 'react';
 import myImg from '../../assets/images/My Img.jpg'
 
-const AboutMe = () => {
+const About = () => {
     return (
         <main className='L-about-me-container'>
             <div className='G-container L-about-wrapper'>
@@ -38,4 +38,4 @@ const AboutMe = () => {
         </main>);
 };
 
-export default AboutMe;
+export default About;
