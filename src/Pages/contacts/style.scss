@@ -7,13 +7,11 @@
   height      : 100%;
   padding-top : 200px;
   position    : relative;
-
   .L-map-container {
 	position  : relative;
 	width     : 100%;
 	max-width : 600px;
 	margin    : 0 auto;
-
 	.L-map-box {
 	  width         : 100%;
 	  position      : relative;
@@ -23,14 +21,12 @@
 	  border-radius : 50%;
 	  margin        : 0 auto;
 	  overflow      : hidden;
-
 	  .L-map {
 		width     : 550px;
 		height    : 550px;
 		transform : scale(1.2);
 	  }
 	}
-
 	.L-map-compass {
 	  width            : 50px;
 	  height           : 50px;
@@ -43,7 +39,6 @@
 	  font-size        : 40px;
 	  z-index          : 1;
 	}
-
 	.L-map-mission {
 	  position            : absolute;
 	  left                : -15px;
@@ -54,7 +49,6 @@
 	  z-index             : 1;
 	}
   }
-
   .L-contacts-box {
 	position  : absolute;
 	top       : 150px;
@@ -62,7 +56,6 @@
 	width     : max-content;
 	font-size : 30px;
 	display   : flex;
-
 	.L-info-block {
 	  margin-right : 30px;
 
@@ -91,7 +84,6 @@
 		}
 	  }
 	}
-
 	.L-socials-block {
 	  width         : 120px;
 	  height        : 120px;
@@ -104,25 +96,27 @@
 	  );
 	  border-radius : 0 15px 15px 15px;
 	  position      : relative;
+	  border        : 1px solid white;
 
 	  .L-slider-cont {
 		position      : absolute;
 		width         : 110px;
-		height        : 90px;
+		height        : 85px;
 		top           : 3.5%;
 		left          : 3.5%;
 		background    : rgba($color : white, $alpha : 0.3);
 		border-radius : 0 15px 15px 15px;
 		box-shadow    : 0 0 -15px #0066ff;
+		border        : 1px solid rgba(255, 255, 255, 1);
 
 		.sliderBlock {
-		  font-size : 60px;
-		  animation : socialMedia 3.1s ease-in reverse infinite;
-
 		  a {
+			text-align : center;
+			margin-top : 5px;
+			animation  : socialMedia 3.1s infinite;
+
 			i {
-			  margin-left : 25px;
-			  transition  : 0.3s;
+			  font-size : 60px;
 
 			  &:hover {
 				transform  : scale(1.5);
@@ -131,7 +125,6 @@
 			}
 		  }
 		}
-
 		.Gmail {
 		  color   : black;
 		  padding : 0 2px;
@@ -152,6 +145,17 @@
 		  }
 		}
 
+		.Mail {
+		  color : #168de2;
+
+		  &:hover {
+			color            : #ffb300;
+			background-color : #168de2;
+			border-radius    : 10px;
+			padding          : 3px;
+		  }
+		}
+
 		.Linkedin {
 		  color : $black;
 
@@ -160,7 +164,6 @@
 			background-color : white;
 		  }
 		}
-
 		.Telegram {
 		  color     : $black;
 		  transform : scale(1.1);
@@ -179,7 +182,6 @@
   0% {
 	transform : rotateX(0deg) rotateY(0deg);
   }
-
   100% {
 	transform : rotateX(0deg) rotateY(360deg);
   }
