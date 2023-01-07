@@ -30,12 +30,51 @@ const Skill = () => {
     swipeToSlide: true,
     focusOnSelect: true,
     asNavFor: big,
-
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          slidesToShow: 6,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          centerMode: false,
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 380,
+        settings: {
+          centerMode: false,
+          slidesToShow: 3,
+        },
+      },
+    ],
   };
 
   return (
     <div
-      className="L-skills-wrapper G-background-cover"
+      className="L-skills-wrapper G-background-cover "
       style={{ backgroundImage: `url('${SkillBgImage}')` }}
     >
       <div className="G-container">

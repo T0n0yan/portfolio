@@ -2,119 +2,167 @@
 @import "../../assets/style/mixin";
 
 .L-skills-wrapper {
-  padding-top : 150px;
-  width       : 100%;
-  height      : 100vh;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding-top: 150px;
+
+  @include screen-max-width-991 {
+    padding-top: 150px;
+  }
+  @include screen-max-width-767 {
+	padding-top:  180px;
+  }
+  @include screen-max-width-576 {
+	padding-top:  200px;
+  }
 
   .L-skills-container {
-	margin : 0 auto;
+    margin: 0 auto;
+    position: relative;
+    max-width: 700px;
+    width: 90%;
+    height: 750px;
+    @include screen-max-width-991 {
+      max-width: 600px;
+      width: 100%;
+      max-height: 700px;
+    }
+    @include screen-max-width-576 {
+      max-height: 500px;
+    }
+    .L-skills-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 25px;
+      background: rgba(143, 143, 143, 0.03);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.21);
+      backdrop-filter: blur(13.8px);
+      -webkit-backdrop-filter: blur(13.8px);
 
-	.L-skills-box {
-	  width                   : 50%;
-	  border-radius           : 25px;
-	  background              : rgba(143, 143, 143, 0.03);
-	  box-shadow              : 0 4px 30px rgba(0, 0, 0, 0.21);
-	  backdrop-filter         : blur(13.8px);
-	  -webkit-backdrop-filter : blur(13.8px);
+      .L-logo-box {
+        width: 85%;
+        margin: 20px auto;
+        padding: 20px 15px;
+        height: 500px;
+        border-radius: 25px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(12.5px);
+        -webkit-backdrop-filter: blur(12.5px);
+        -moz-box-shadow: inset 2px 20px 50px rgba(154, 147, 140, 0.5),
+          1px 1px 50px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: inset 2px 20px 50px rgba(154, 147, 140, 0.5),
+          1px 1px 50px rgba(255, 255, 255, 1);
+        box-shadow: inset 2px 20px 50px rgba(154, 147, 140, 0.5),
+          1px 1px 50px rgba(255, 255, 255, 1);
+        @include screen-max-width-767 {
+          width: 90%;
+        }
+      }
 
-	  .L-logo-box {
-		width                   : 85%;
-		margin                  : 20px auto;
-		padding                 : 20px 15px;
-		height                  : 500px;
-		border-radius           : 25px;
-		overflow                : hidden;
-		background              : rgba(255, 255, 255, 0.02);
-		backdrop-filter         : blur(12.5px);
-		-webkit-backdrop-filter : blur(12.5px);
-		-moz-box-shadow         : inset 2px 20px 50px rgba(154, 147, 140, 0.5),
-		1px 1px 50px rgba(255, 255, 255, 1);
-		-webkit-box-shadow      : inset 2px 20px 50px rgba(154, 147, 140, 0.5),
-		1px 1px 50px rgba(255, 255, 255, 1);
-		box-shadow              : inset 2px 20px 50px rgba(154, 147, 140, 0.5),
-		1px 1px 50px rgba(255, 255, 255, 1);
-	  }
+      .slider-big {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 400px;
+        width: 100%;
 
-	  .slider-big {
-		text-align : center;
-		margin     : 0 auto;
-		max-width  : 400px;
-		width      : 100%;
+        .skill-animated-logo {
+          animation: rotateLogo 10s linear infinite;
+          position: relative;
 
-		.skill-animated-logo {
-		  animation : rotateLogo 10s linear infinite;
-		  position  : relative;
+          &:after {
+            content: "";
+            border-bottom: 10px solid rgba(#000, 0.2);
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -50px;
+            border-radius: 50%;
+            filter: blur(100%);
+          }
+          span {
+            font-size: 300px;
+            @include screen-max-width-991 {
+              font-size: $font-size-250;
+            }
+            @include screen-max-width-767 {
+              font-size: $font-size-250;
+            }
+            @include screen-max-width-576 {
+              font-size: $font-size-150;
+            }
+          }
+        }
+        .L-skill-name {
+          margin-top: 100px;
+          width: 100%;
+          font-size: $font-size-36;
+          color: $white;
+          -webkit-text-stroke: 1px $black;
+          @include screen-max-width-767 {
+            margin-top: 80px;
+            font-size: $font-size-28;
+          }
+          @include screen-max-width-576 {
+            margin-top: 70px;
+          }
+        }
+      }
 
-		  &:after {
-			content       : "";
-			border-bottom : 10px solid rgba(#000, 0.2);
-			width         : 100%;
-			position      : absolute;
-			left          : 0;
-			bottom        : -50px;
-			border-radius : 50%;
-			filter        : blur(100%);
-		  }
+      .slider-little {
+        width: 80%;
+        margin: 50px auto;
+        @include screen-max-width-576 {
+          margin: 20px auto;
+        }
+        .slick-list {
+          height: 90px;
+          background: rgba(255, 255, 255, 0.01);
+        }
 
-		  span {
-			font-size : 300px;
-		  }
-		}
+        span {
+          display: block;
+          padding: 15px;
+          width: max-content;
+          font-size: $font-size-50;
+          cursor: pointer;
+          background: rgba(255, 255, 255, 0.36);
+          border-radius: 15px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(10.4px);
+          -webkit-backdrop-filter: blur(10.4px);
+          transition: 0.3s;
+          margin-right: 15px;
+          @include screen-max-width-576 {
+            font-size: $font-size-36;
+          }
 
-		.L-skill-name {
-		  margin-top          : 100px;
-		  width               : 100%;
-		  font-size           : 35px;
-		  color               : $white;
-		  -webkit-text-stroke : 1px $black;
-		}
-	  }
-
-	  .slider-little {
-		width  : 80%;
-		margin : 50px auto;
-
-		.slick-list {
-		  height     : 90px;
-		  background : rgba(255, 255, 255, 0.01);
-		}
-
-		span {
-		  display                 : block;
-		  padding                 : 15px;
-		  width                   : max-content;
-		  font-size               : $font-size-50;
-		  cursor                  : pointer;
-		  background              : rgba(255, 255, 255, 0.36);
-		  border-radius           : 15px;
-		  box-shadow              : 0 4px 30px rgba(0, 0, 0, 0.1);
-		  backdrop-filter         : blur(10.4px);
-		  -webkit-backdrop-filter : blur(10.4px);
-		  transition              : 0.3s;
-		  margin-right            : 15px;
-
-		  &:hover {
-			opacity    : 0.7;
-			transition : 0.3s;
-			transform  : translateY(10%);
-		  }
-		}
-	  }
-	}
+          &:hover {
+            opacity: 0.7;
+            transition: 0.3s;
+            transform: translateY(10%);
+          }
+        }
+      }
+    }
   }
 }
 
 @keyframes rotateLogo {
   0% {
-	transform  : rotateX(0deg) rotateY(0deg);
-	transition : 2s all;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: 2s all;
   }
   50% {
-	transform  : rotateX(0deg) rotateY(360deg);
-	transition : 2s all;
+    transform: rotateX(0deg) rotateY(360deg);
+    transition: 2s all;
   }
   100% {
-	transform  : rotateX(0deg) rotateY(0deg);
-	transition : 2s all;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: 2s all;
   }
 }
