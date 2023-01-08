@@ -22,7 +22,7 @@
     right: 0;
     bottom: 0;
     transform: translateX(100%);
-    transition: 0.3s all;
+    transition:  $transition-3 all;
   }
 
   .L-header-wrapper {
@@ -46,7 +46,7 @@
       width: 70px;
       height: 50px;
       cursor: pointer;
-      transition: 0.3s;
+      transition: $transition-3;
 
       &:hover {
         filter: invert(100%);
@@ -166,7 +166,7 @@
   }
 
   .burger-active {
-    transition: 0.3s all;
+    transition: $transition-3 all;
 
     transform: rotate(135deg);
 

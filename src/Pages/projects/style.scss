@@ -40,7 +40,7 @@
 	  overflow            : hidden;
 	  backface-visibility : hidden;
 	  position            : absolute;
-	  transition          : transform 1s ease;
+	  transition          : transform  $transition-1 ease;
 	}
 
 	.front img {

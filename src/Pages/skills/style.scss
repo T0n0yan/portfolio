@@ -11,10 +11,10 @@
     padding-top: 150px;
   }
   @include screen-max-width-767 {
-	padding-top:  180px;
+    padding-top: 180px;
   }
   @include screen-max-width-576 {
-	padding-top:  200px;
+    padding-top: 200px;
   }
 
   .L-skills-container {
@@ -30,6 +30,9 @@
     }
     @include screen-max-width-576 {
       max-height: 500px;
+      max-width: 576px;
+      width: 85%;
+      margin: 0 auto;
     }
     .L-skills-box {
       position: absolute;
@@ -83,6 +86,10 @@
             bottom: -50px;
             border-radius: 50%;
             filter: blur(100%);
+            @include screen-max-width-576 {
+              width: 50%;
+              left: 25%;
+            }
           }
           span {
             font-size: 300px;
@@ -119,9 +126,14 @@
         @include screen-max-width-576 {
           margin: 20px auto;
         }
+
         .slick-list {
           height: 90px;
           background: rgba(255, 255, 255, 0.01);
+          @include screen-max-width-440 {
+            margin: 0;
+            height: 70px;
+          }
         }
 
         span {
@@ -135,15 +147,18 @@
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           backdrop-filter: blur(10.4px);
           -webkit-backdrop-filter: blur(10.4px);
-          transition: 0.3s;
+          transition: $transition-3;
           margin-right: 15px;
           @include screen-max-width-576 {
             font-size: $font-size-36;
           }
+          @include screen-max-width-440 {
+            font-size: $font-size-28;
+          }
 
           &:hover {
             opacity: 0.7;
-            transition: 0.3s;
+            transition: $transition-3;
             transform: translateY(10%);
           }
         }
@@ -155,14 +170,14 @@
 @keyframes rotateLogo {
   0% {
     transform: rotateX(0deg) rotateY(0deg);
-    transition: 2s all;
+    transition: $transition-2 all;
   }
   50% {
     transform: rotateX(0deg) rotateY(360deg);
-    transition: 2s all;
+    transition: $transition-2 all;
   }
   100% {
     transform: rotateX(0deg) rotateY(0deg);
-    transition: 2s all;
+    transition: $transition-2 all;
   }
 }
