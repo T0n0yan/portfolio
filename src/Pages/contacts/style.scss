@@ -141,6 +141,11 @@
 	  .L-time-container {
 		text-align    : right;
 		padding-right : 10px;
+
+		.time {
+		  color               : #5fc4f0;
+		  -webkit-text-stroke : 1px black;
+		}
 	  }
 
 	  .L-tel-number {
