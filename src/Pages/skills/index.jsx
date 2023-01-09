@@ -4,7 +4,7 @@ import skillsData from "./skillsData";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import SkillBgImage from "../../assets/images/skills background photo.jfif";
+import SkillBgImage from "../../assets/images/skills-background-photo.jpg";
 
 const Skill = () => {
   const [little, setLittle] = useState(null);

@@ -1,6 +1,5 @@
 import "./style.scss";
 import React, { useState, useEffect } from "react";
-import bgimage from "../../assets/images/naviagtorReloadFull.jpg";
 import Slider from "react-slick";
 import mapNorth from '../../assets/images/radar_north.png'
 const Contacts = () => {
@@ -40,7 +39,6 @@ const Contacts = () => {
   return (
     <div
       className="L-contacts-container G-flex G-align-center "
-      style={{ backgroundImage: `${bgimage}` }}
     >
       <div className="G-container">
         <div className="L-map-container G-flex G-justify-center G-align-center">

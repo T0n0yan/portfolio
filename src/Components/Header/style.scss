@@ -2,181 +2,204 @@
 @import "../../assets/style/mixin";
 
 .L-header-container {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: transparent;
-  box-shadow: 0 4px 30px $box-shadow-black;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  z-index: 9999;
+  width                   : 100%;
+  position                : fixed;
+  top                     : 0;
+  left                    : 0;
+  background              : transparent;
+  box-shadow              : 0 4px 30px $box-shadow-black;
+  backdrop-filter         : blur(14px);
+  -webkit-backdrop-filter : blur(14px);
+  z-index                 : 9999;
   @include screen-max-width-1400 {
-    padding: 0 25px;
+    padding : 0 25px;
   }
   @include screen-max-width-991 {
-    width: 49%;
-    height: 100%;
-    display: flex;
-    left: unset;
-    right: 0;
-    bottom: 0;
-    transform: translateX(100%);
-    transition:  $transition-3 all;
+    width      : 49%;
+    height     : 100%;
+    display    : flex;
+    left       : unset;
+    right      : 0;
+    bottom     : 0;
+    transform  : translateX(100%);
+    transition : $transition-3 all;
   }
-
   .L-header-wrapper {
-    padding: 20px 0;
-    width: 100%;
+    padding : 20px 0;
+    width   : 100%;
     @include screen-max-width-991 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      display        : flex;
+      flex-direction : column;
+      align-items    : center;
     }
   }
-
   .L-logo-container {
-    width: max-content;
-    height: 50px;
+    width  : max-content;
+    height : 50px;
     @include screen-max-width-991 {
-      justify-self: start;
+      justify-self : start;
     }
 
     .L-logo {
-      width: 70px;
-      height: 50px;
-      cursor: pointer;
-      transition: $transition-3;
+      width      : 70px;
+      height     : 50px;
+      cursor     : pointer;
+      transition : $transition-3;
 
       &:hover {
-        filter: invert(100%);
+        filter : invert(100%);
       }
 
       @include screen-max-width-991 {
-        width: 100px;
-        height: 70px;
+        width  : 100px;
+        height : 70px;
       }
     }
   }
-
   .L-nav-container {
-    align-items: center;
+    align-items : center;
     @include screen-max-width-991 {
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
+      width          : 100%;
+      flex-direction : column;
+      align-items    : center;
     }
 
     .L-nav-lists {
-      width: max-content;
+      width : max-content;
       @include screen-max-width-991 {
-        flex-direction: column;
-        align-items: center;
+        flex-direction : column;
+        align-items    : center;
       }
       @include screen-max-width-1400 {
-        font-size: $font-size-20;
+        font-size : $font-size-20;
       }
 
       li {
-        cursor: pointer;
+        cursor : pointer;
+      }
 
+      .Link-about {
         &:hover {
-          justify-content: center;
-          align-items: center;
-          background: green;
-          -webkit-clip-path: polygon(8% 10%, 1% 99%, 92% 87%, 99% 18%);
-          clip-path: polygon(8% 10%, 1% 99%, 92% 87%, 99% 18%);
+          background        : green;
+          -webkit-clip-path : polygon(8% 10%, 1% 99%, 92% 87%, 99% 18%);
+          clip-path         : polygon(8% 10%, 1% 99%, 92% 87%, 99% 18%);
         }
 
+      }
+
+      .Link-skills {
+        &:hover {
+          background        : green;
+          -webkit-clip-path : polygon(1% 30%, 12% 89%, 87% 96%, 100% 11%);
+          clip-path         : polygon(1% 30%, 12% 89%, 87% 96%, 100% 11%);
+        }
+      }
+
+      .Link-projects {
+        &:hover {
+          background        : green;
+          -webkit-clip-path : polygon(5% 23%, 8% 98%, 96% 84%, 90% 16%);
+          clip-path         : polygon(5% 23%, 8% 98%, 96% 84%, 90% 16%);
+        }
+      }
+
+      .Link-contacts {
+        &:hover {
+          background        : green;
+          -webkit-clip-path : polygon(9% 10%, 5% 88%, 97% 89%, 92% 22%);
+          clip-path         : polygon(9% 10%, 5% 88%, 97% 89%, 92% 22%);
+        }
+      }
+
+      @include screen-max-width-991 {
+        font-size : $font-size-40;
+      }
+
+      a {
+        width               : max-content;
+        color               : hotpink;
+        font-size           : $font-size-32;
+        -webkit-text-stroke : 1.5px black; text-transform : uppercase;
+        letter-spacing      : 1px;
+        cursor              : pointer;
+        padding             : 10px 20px;
         @include screen-max-width-991 {
-          font-size: $font-size-40;
+          font-size : $font-size-40;
         }
-    
-        a {
-          width: max-content;
-          color: hotpink;
-          font-size: $font-size-32;
-          text-shadow: 2px 0 black, -2px 0 #000, 0 2px #000, 0 -2px #000,
-            1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          cursor: pointer;
-          padding: 10px 20px;
-
-          @include screen-max-width-991 {
-            font-size: $font-size-40;
-          }
-          @include screen-max-width-767 {
-            font-size: $font-size-36;
-          }
-  
-          @include screen-max-width-576 {
-            font-size: $font-size-28;
-          }
+        @include screen-max-width-767 {
+          font-size : $font-size-36;
         }
 
-        .active {
-          color: $white;
+        @include screen-max-width-576 {
+          font-size : $font-size-28;
         }
+      }
+
+      .active {
+        color : $white;
       }
     }
   }
 }
-.L-header-active {
-  transform: translateX(0);
-}
+.L-languages-cont {
+  .selectBox {
 
+  }
+}
+.L-header-active {
+  transform : translateX(0);
+}
 .L-burger {
-  display: none;
+  display : none;
   @include screen-max-width-991 {
-    display: block;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    width: 30px;
-    height: 30px;
-    z-index: 10;
+    display  : block;
+    position : absolute;
+    top      : 50px;
+    left     : 50px;
+    width    : 30px;
+    height   : 30px;
+    z-index  : 10;
 
     .burger-line {
-      position: absolute;
-      top: 50%;
-      display: block;
-      width: 30px;
-      height: 1.5px;
-      background-color: $white;
+      position         : absolute;
+      top              : 50%;
+      display          : block;
+      width            : 30px;
+      height           : 1.5px;
+      background-color : $white;
 
       &:before {
-        content: "";
-        position: absolute;
-        top: -15px;
-        width: 100%;
-        height: 1.5px;
-        background-color: $white;
+        content          : "";
+        position         : absolute;
+        top              : -15px;
+        width            : 100%;
+        height           : 1.5px;
+        background-color : $white;
       }
 
       &:after {
-        content: "";
-        position: absolute;
-        top: 15px;
-        width: 100%;
-        height: 1.5px;
-        background-color: $white;
+        content          : "";
+        position         : absolute;
+        top              : 15px;
+        width            : 100%;
+        height           : 1.5px;
+        background-color : $white;
       }
     }
   }
 
   .burger-active {
-    transition: $transition-3 all;
+    transition : $transition-3 all;
 
-    transform: rotate(135deg);
+    transform  : rotate(135deg);
 
     &:before {
-      display: none;
+      display : none;
     }
 
     &:after {
-      top: 0;
-      transform: rotate(90deg);
+      top       : 0;
+      transform : rotate(90deg);
     }
   }
 }

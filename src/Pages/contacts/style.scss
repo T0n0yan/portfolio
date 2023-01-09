@@ -3,259 +3,268 @@
 @import "../../../src/assets/style/fonts";
 
 .L-contacts-container {
-  width: 100%;
-  height: 100vh;
+  width  : 100%;
+  height : 100vh;
   @include screen-max-width-991 {
-    padding-top: 100px;
+	padding-top : 100px;
   }
+
   .L-map-container {
-    position: relative;
-    margin: 0 auto;
-    max-width: 600px;
-    width: 100%;
-    @include screen-max-width-1300 {
-      max-width: 550px;
-      height: 550px;
-    }
-    @include screen-max-width-1200 {
-      max-width: 500px;
-      height: 500px;
-    }
-    @include screen-max-width-991 {
-      max-width: 500px;
-      height: 500px;
-    }
-    @include screen-max-width-576 {
-      max-width: 400px;
-      width: 100%;
-      height: 400px;
-    }
-    @include screen-max-width-440{
-      max-width: 300px;
-      width: 100%;
-      height: 300px;
-    }
-    .L-map-box {
-      width: 100%;
-      position: relative;
-      max-width: 600px;
-      height: 600px;
-      border: 25px solid #f59dda;
-      border-radius: 50%;
-      margin: 0 auto;
-      overflow: hidden;
-      @include screen-max-width-1300 {
-        max-width: 550px;
-        height: 550px;
-      }
-      @include screen-max-width-1200 {
-        max-width: 500px;
-        height: 500px;
-        border: 20px solid #f59dda;
-      }
-      @include screen-max-width-991 {
-        max-width: 500px;
-        height: 500px;
-        border: 15px solid #f59dda;
-      }
-      @include screen-max-width-576 {
-        max-width: 400px;
-        width: 100%;
-        height: 400px;
-        border: 10px solid #f59dda;
-      }
-      @include screen-max-width-440{
-        max-width: 300px;
-        width: 100%;
-        height: 300px;
-        border: 5px solid #f59dda;
-      }
+	position  : relative;
+	margin    : 0 auto;
+	max-width : 600px;
+	width     : 100%;
+	@include screen-max-width-1300 {
+	  max-width : 550px;
+	  height    : 550px;
+	}
+	@include screen-max-width-1200 {
+	  max-width : 500px;
+	  height    : 500px;
+	}
+	@include screen-max-width-991 {
+	  max-width : 500px;
+	  height    : 500px;
+	}
+	@include screen-max-width-576 {
+	  max-width : 400px;
+	  width     : 100%;
+	  height    : 400px;
+	}
+	@include screen-max-width-440 {
+	  max-width : 300px;
+	  width     : 100%;
+	  height    : 300px;
+	}
 
-      .L-map {
-        width: 550px;
-        height: 550px;
-        transform: scale(1.5);
-      }
-    }
-    .L-map-compass {
-      width: 70px;
-      height: 70px;
-      position: absolute;
-      top: -20px;
-      z-index: 1;
-      @include screen-max-width-576 {
-        width: 45px;
-        height: 45px;
-      }
-    }
-    .L-map-mission {
-      position: absolute;
-      left: -15px;
-      color: white;
-      font-family: Passion, serif;
-      -webkit-text-stroke: 2px black;
-      font-size: $font-size-80;
-      z-index: 1;
-      @include screen-max-width-576 {
-        font-size: $font-size-48;
-        left: -10px;
-      }
-      @include screen-max-width-440{
-        font-size: $font-size-32;
-        left: -7px;
-      }
-    }
+	.L-map-box {
+	  width         : 100%;
+	  position      : relative;
+	  max-width     : 600px;
+	  height        : 600px;
+	  border        : 25px solid #f59dda;
+	  border-radius : 50%;
+	  margin        : 0 auto;
+	  overflow      : hidden;
+	  @include screen-max-width-1300 {
+		max-width : 550px;
+		height    : 550px;
+	  }
+	  @include screen-max-width-1200 {
+		max-width : 500px;
+		height    : 500px;
+		border    : 20px solid #f59dda;
+	  }
+	  @include screen-max-width-991 {
+		max-width : 500px;
+		height    : 500px;
+		border    : 15px solid #f59dda;
+	  }
+	  @include screen-max-width-576 {
+		max-width : 400px;
+		width     : 100%;
+		height    : 400px;
+		border    : 10px solid #f59dda;
+	  }
+	  @include screen-max-width-440 {
+		max-width : 300px;
+		width     : 100%;
+		height    : 300px;
+		border    : 5px solid #f59dda;
+	  }
+
+	  .L-map {
+		width     : 550px;
+		height    : 550px;
+		transform : scale(1.5);
+	  }
+	}
+
+	.L-map-compass {
+	  width    : 70px;
+	  height   : 70px;
+	  position : absolute;
+	  top      : -20px;
+	  z-index  : 1;
+	  @include screen-max-width-576 {
+		width  : 45px;
+		height : 45px;
+	  }
+	}
+
+	.L-map-mission {
+	  position            : absolute;
+	  left                : -15px;
+	  color               : white;
+	  font-family         : Passion, serif;
+	  -webkit-text-stroke : 2px black;
+	  font-size           : $font-size-80;
+	  z-index             : 1;
+	  @include screen-max-width-576 {
+		font-size : $font-size-48;
+		left      : -10px;
+	  }
+	  @include screen-max-width-440 {
+		font-size : $font-size-32;
+		left      : -7px;
+	  }
+	}
   }
+
   .L-contacts-box {
-    position: absolute;
-    top: 150px;
-    right: 20px;
-    width: max-content;
-    font-size: $font-size-32;
-    display: flex;
-    @include screen-max-width-1200 {
-      top: 120px;
-      font-size: $font-size-30;
-    }
-    @include screen-max-width-991 {
-      top: 30px;
-      font-size: $font-size-28;
-    }
-    @include screen-max-width-576 {
-      font-size: $font-size-24;
-      top: 40px;
-      right: 5px;
-    }
-    @include screen-max-width-440 {
-      display: flex;
-      flex-direction: column;
-      align-items:flex-end
-    }
-    .L-info-block {
-      .L-time-container {
-        text-align: right;
-        padding-right: 10px;
-      }
+	position  : absolute;
+	top       : 150px;
+	right     : 20px;
+	width     : max-content;
+	font-size : $font-size-32;
+	display   : flex;
+	@include screen-max-width-1200 {
+	  top       : 120px;
+	  font-size : $font-size-30;
+	}
+	@include screen-max-width-991 {
+	  top       : 30px;
+	  font-size : $font-size-28;
+	}
+	@include screen-max-width-576 {
+	  font-size : $font-size-24;
+	  top       : 40px;
+	  right     : 5px;
+	}
+	@include screen-max-width-440 {
+	  display        : flex;
+	  flex-direction : column;
+	  align-items    : flex-end
+	}
 
-      .L-tel-number {
-        .tel {
-          display: flex;
-          align-items: center;
+	.L-info-block {
+	  .L-time-container {
+		text-align    : right;
+		padding-right : 10px;
+	  }
 
-          p {
-            -webkit-text-stroke: 1.3px black;
-            color: #02f79b;
-            margin: 0 10px;
-          }
+	  .L-tel-number {
+		.tel {
+		  display     : flex;
+		  align-items : center;
 
-          i {
-            color: #00ff00;
-            -webkit-text-stroke: 1px black;
-            font-size: 25px;
-            margin-right: 5px;
-          }
-        }
-      }
-    }
-    .L-socials-block {
-      width: 120px;
-      height: 120px;
-      background: rgb(253, 133, 253);
-      background: linear-gradient(
-        0deg,
-        rgba(253, 133, 253, 1) 0%,
-        rgba(95, 194, 236, 1) 100%,
-        rgba(58, 189, 252, 1) 100%
-      );
-      border-radius: 0 15px 15px 15px;
-      position: relative;
-      border: 1px solid white;
+		  p {
+			-webkit-text-stroke : 1.3px black;
+			color               : #02f79b;
+			margin              : 0 10px;
+		  }
 
-      .L-slider-cont {
-        position: absolute;
-        width: 110px;
-        height: 85px;
-        top: 3.5%;
-        left: 3.5%;
-        background: rgba($color: white, $alpha: 0.3);
-        border-radius: 0 15px 15px 15px;
-        box-shadow: 0 0 -15px #0066ff;
-        border: 1px solid rgba(255, 255, 255, 1);
+		  i {
+			color               : #00ff00;
+			-webkit-text-stroke : 1px black;
+			font-size           : 25px;
+			margin-right        : 5px;
+		  }
+		}
+	  }
+	}
 
-        .sliderBlock {
-          a {
-            text-align: center;
-            margin-top: 5px;
-            animation: socialMedia 3.1s infinite;
+	.L-socials-block {
+	  width         : 120px;
+	  height        : 120px;
+	  background    : rgb(253, 133, 253);
+	  background    : linear-gradient(
+					  0deg,
+					  rgba(253, 133, 253, 1) 0%,
+					  rgba(95, 194, 236, 1) 100%,
+					  rgba(58, 189, 252, 1) 100%
+	  );
+	  border-radius : 0 15px 15px 15px;
+	  position      : relative;
+	  border        : 1px solid white;
 
-            i {
-              font-size: 60px;
+	  .L-slider-cont {
+		position      : absolute;
+		width         : 110px;
+		height        : 85px;
+		top           : 3.5%;
+		left          : 3.5%;
+		background    : rgba($color : white, $alpha : 0.3);
+		border-radius : 0 15px 15px 15px;
+		box-shadow    : 0 0 -15px #0066ff;
+		border        : 1px solid rgba(255, 255, 255, 1);
 
-              &:hover {
-                transform: scale(1.5);
-                transition: $transition-3;
-              }
-            }
-          }
-        }
-        .Gmail {
-          color: black;
-          padding: 0 2px;
+		.sliderBlock {
+		  a {
+			text-align : center;
+			margin-top : 5px;
+			animation  : socialMedia 3.1s infinite;
 
-          &:hover {
-            color: #d14836;
-            border-radius: 5px;
-            background-color: white;
-          }
-        }
+			i {
+			  font-size : 60px;
 
-        .Github {
-          color: $black;
+			  &:hover {
+				transform  : scale(1.5);
+				transition : $transition-3;
+			  }
+			}
+		  }
+		}
 
-          &:hover {
-            border-radius: 50px;
-            background-color: white;
-          }
-        }
+		.Gmail {
+		  color   : black;
+		  padding : 0 2px;
 
-        .Mail {
-          color: #168de2;
+		  &:hover {
+			color            : #d14836;
+			border-radius    : 5px;
+			background-color : white;
+		  }
+		}
 
-          &:hover {
-            color: #ffb300;
-            background-color: #168de2;
-            border-radius: 10px;
-            padding: 3px;
-          }
-        }
+		.Github {
+		  color : $black;
 
-        .Linkedin {
-          color: $black;
+		  &:hover {
+			border-radius    : 50px;
+			background-color : white;
+		  }
+		}
 
-          &:hover {
-            border-radius: 5px;
-            background-color: white;
-          }
-        }
-        .Telegram {
-          color: $black;
-          transform: scale(1.1);
+		.Mail {
+		  color : #168de2;
 
-          &:hover {
-            border-radius: 50px;
-            background-color: white;
-            color: #0066ff;
-          }
-        }
-      }
-    }
+		  &:hover {
+			color            : #ffb300;
+			background-color : #168de2;
+			border-radius    : 10px;
+			padding          : 3px;
+		  }
+		}
+
+		.Linkedin {
+		  color : $black;
+
+		  &:hover {
+			border-radius    : 5px;
+			background-color : white;
+		  }
+		}
+
+		.Telegram {
+		  color     : $black;
+		  transform : scale(1.1);
+
+		  &:hover {
+			border-radius    : 50px;
+			background-color : white;
+			color            : #0066ff;
+		  }
+		}
+	  }
+	}
   }
 }
 @keyframes socialMedia {
   0% {
-    transform: rotateX(0deg) rotateY(0deg);
+	transform : rotateX(0deg) rotateY(0deg);
   }
   100% {
-    transform: rotateX(0deg) rotateY(360deg);
+	transform : rotateX(0deg) rotateY(360deg);
   }
 }
