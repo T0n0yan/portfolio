@@ -8,10 +8,15 @@ const usePreloader = () => {
     useEffect(() => {
         setTestSound(() => testSound.play())
         setLoading(!loading)
-        setTimeout(() => {
+       let myTimeOut = setTimeout(() => {
             setTestSound(() => testSound.pause())
             setLoading(false)
         }, 1000)
+
+        return () => {
+            clearTimeout(myTimeOut)
+        }
+
     }, [])
 
 

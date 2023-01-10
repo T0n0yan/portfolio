@@ -86,7 +86,7 @@ const Skill = () => {
                 ref={(slider1) => setBIg(slider1)}
                 className="slider-big"
               >
-                {skillsData.map((el) => {
+                {skillsData.map(el => {
                   return (
                     <div key={el.id}>
                       <div className="skill-animated-logo">
@@ -100,7 +100,7 @@ const Skill = () => {
             </div>
             <div className="slider-little">
               <Slider {...settings2} ref={(slider2) => setLittle(slider2)}>
-                {skillsData.map((el) => {
+                {skillsData.map(el => {
                   return (
                     <div key={el.id}>
                       <span className={`icon-${el.name}`}></span>

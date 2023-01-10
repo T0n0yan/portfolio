@@ -6,9 +6,15 @@ const useNavigationLoader = () => {
     const [isLoading, setIsLoading] = useState(false)
     useEffect(() => {
         setIsLoading(true)
-        setTimeout(() => {
+        let myTimeOut = setTimeout(() => {
             setIsLoading(false)
         }, 1800)
+
+        return () => {
+            clearTimeout(myTimeOut)
+        }
+
+
     }, [location])
 
 
