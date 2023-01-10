@@ -3,12 +3,13 @@
 
 .L-projects-wrapper {
   width       : 100%;
+  min-height  : 100vh;
   height      : 100%;
   padding-top : 200px;
   background  : rgb(238, 174, 202);
   background  : radial-gradient(
 				  circle,
-				  rgba(238, 174	, 202, 1) 0%,
+				  rgba(238, 174, 202, 1) 0%,
 				  rgb(23, 105, 199) 100%
   );
 
@@ -18,50 +19,70 @@
 
 
 	.card {
-	  width    : 45%;
-	  height   : 400px;
-	  position : relative;
-	  cursor   : pointer;
-	  margin   : 20px 0;
+	  width         : 45%;
+	  height        : 300px;
+	  position      : relative;
+	  cursor        : pointer;
+	  margin        : 20px 0;
+	  border-radius : 25px;
+	  box-shadow    : 0 4px 30px rgba(0, 0, 0, 0.21);
 
 
 	  &:hover > .front {
-	  transform : perspective(1000px) rotateY(-180deg);
-
+		transform : perspective(1000px) rotateY(-180deg);
 	  }
 
 	  &:hover > .back {
-	  transform : perspective(1000px) rotateY(0deg);
-	  }
-	}
-	.front,
-	.back {
-	  width               : 100%;
-	  height              : 100%;
-	  overflow            : hidden;
-	  backface-visibility : hidden;
-	  position            : absolute;
-	  transition          : transform $transition-1 ease;
-
-	}
-	.front img {
-	  height : 100%;
-
-	}
-	.front {
-	  .L-projects-slider {
-		width  : 500px;
-		height : 300px;
+		transform : perspective(1000px) rotateY(0deg);
 	  }
 
+	  .front, .back {
+		width               : 100%;
+		height              : 100%;
+		backface-visibility : hidden;
+		overflow            : hidden;
+		position            : absolute;
+		transition          : transform $transition-1 ease-out;
+		border-radius       : 25px;
 
-	  transform : perspective(600px) rotateY(0deg);
+	  }
 
-	}
-	.back {
-	  background : $white;
-	  transform  : perspective(600px) rotateY(180deg);
+	  .front {
+		-webkit-perspective : none;
+		-moz-perspective    : none;
+		transform           : perspective(none) rotateY(0deg);
+
+	  }
+
+	  .L-slider-img {
+		height              : 300px;
+		background-position : top;
+		background-repeat   : no-repeat;
+		background-size     : 100%;
+
+	  }
+
+	  .back {
+		width               : 100%;
+		height              : 100%;
+		-webkit-perspective : none;
+		-moz-perspective    : none;
+		transform           : perspective(none) rotateY(180deg);
+
+		.back-content {
+		  width      : 100%;
+		  height     : 100%;
+		  text-align : center;
+		  padding    : 15px 25px;
+
+		  p {
+			margin-top  : 15px;
+			width       : 100%;
+			color       : $white;
+			font-family : SansSerif;
+		  }
+		}
+	  }
 	}
   }
-
 }
