@@ -201,7 +201,8 @@
 			animation  : socialMedia 3.1s infinite;
 
 			i {
-			  font-size : 60px;
+			  font-size  : 60px;
+			  transition : $transition-3;
 
 			  &:hover {
 				transform  : scale(1.5);
@@ -212,8 +213,10 @@
 		}
 
 		.Gmail {
-		  color   : black;
-		  padding : 0 2px;
+		  color      : black;
+		  padding    : 0 2px;
+		  transition : $transition-3;
+
 
 		  &:hover {
 			color            : #d14836;
@@ -223,42 +226,52 @@
 		}
 
 		.Github {
-		  color : $black;
+		  color      : $black;
+		  transition : $transition-3;
 
 		  &:hover {
 			border-radius    : 50px;
 			background-color : white;
+			transition       : $transition-3;
 		  }
 		}
 
 		.Mail {
-		  color : #168de2;
+		  color      : #168de2;
+		  transition : $transition-3;
 
 		  &:hover {
 			color            : #ffb300;
 			background-color : #168de2;
 			border-radius    : 10px;
 			padding          : 3px;
+			transition       : $transition-3;
+
 		  }
 		}
 
 		.Linkedin {
-		  color : $black;
+		  color      : $black;
+		  transition : $transition-3;
 
 		  &:hover {
 			border-radius    : 5px;
 			background-color : white;
+			transition       : $transition-3;
 		  }
 		}
 
 		.Telegram {
-		  color     : $black;
-		  transform : scale(1.1);
+		  color      : $black;
+		  transform  : scale(1.1);
+		  transition : $transition-3;
 
 		  &:hover {
 			border-radius    : 50px;
 			background-color : white;
 			color            : #0066ff;
+			transition       : $transition-3;
+
 		  }
 		}
 	  }
