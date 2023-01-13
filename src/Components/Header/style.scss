@@ -1,6 +1,5 @@
 @import "../../assets/style/variables";
 @import "../../assets/style/mixin";
-
 .L-header-container {
   width                   : 100%;
   position                : fixed;
@@ -56,6 +55,7 @@
       }
     }
   }
+
   .L-nav-container {
     align-items : center;
     @include screen-max-width-991 {
@@ -76,6 +76,7 @@
 
       li {
         cursor : pointer;
+
       }
 
       .Link-about {
@@ -202,4 +203,7 @@
       transform : rotate(90deg);
     }
   }
+}
+.L-lng-font {
+  font-family : Armenian !important;
 }

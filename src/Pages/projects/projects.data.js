@@ -17,7 +17,7 @@ export const ProjectsData = [
     }, {
       id: 5, img: ProjectsImagesData.zayshop_product2,
     }],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description: "about_me",
     link       : "",
   },
   {
@@ -34,7 +34,7 @@ export const ProjectsData = [
     }, {
       id: 10, img: ProjectsImagesData.admin_crud,
     }],
-    description: 'aaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaa',
+    description: 'about_me',
     
     link: "",
     
@@ -44,7 +44,7 @@ export const ProjectsData = [
     img        : [{
       id: 11, img: ProjectsImagesData.todo_main,
     }],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description: "about_me",
     link       : "",
     
   },

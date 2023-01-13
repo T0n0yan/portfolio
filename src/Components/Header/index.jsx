@@ -15,6 +15,7 @@ const Header = () => {
   const [checkSound, setCheckSound] = useState(new Audio(logoSound));
   const [menu, setMenu] = useState(false);
   const [lng, setLng] = useState("en");
+  const [lngFont, setLngFont] = useState("");
   
   const handleClick = () => {
     setMenu(!menu);
@@ -33,13 +34,15 @@ const Header = () => {
     let selectBox = document.getElementById("selectBox");
     const selectedValue = selectBox.options[selectBox.selectedIndex].value;
     changeLng(selectedValue);
+    setLngFont(selectedValue);
   };
   return (
      <>
        <div className="L-burger G-flex" onClick={handleClick}>
          <span className={`burger-line ${menu ? "burger-active" : ""}`}/>
        </div>
-       <header className={`L-header-container ${menu ? "L-header-active" : ""} `}>
+       <header
+          className={`L-header-container ${menu ? "L-header-active" : ""} ${lngFont === "hy" ? "L-lng-font" : ""} `}>
          <div className="G-container L-header-wrapper G-flex G-justify-between G-align-center">
            <div className="L-logo-container " onClick={() => logoSoudeOn()}>
              <NavLink
@@ -52,7 +55,7 @@ const Header = () => {
              <ul className="L-nav-lists G-flex G-align-center G-justify-between ">
                <li onClick={() => handleMouseHover()} className="Link-about">
                  <NavLink to="/about" onClick={() => setMenu(false)}>
-                   {t("about me")}
+                   {t("about_me")}
                  </NavLink>
                </li>
                <li onClick={() => handleMouseHover()} className="Link-skills">
@@ -73,7 +76,9 @@ const Header = () => {
              </ul>
            </nav>
            <div className="L-languages-cont G-flex  G-align-center G-justify-center G-flex-column">
-             <select id="selectBox" onChange={() => handleChangeLng()}>
+             <select  id="selectBox" onChange={(e) => {
+               handleChangeLng();
+             }}>
                <option value="en">
                  EN
                </option>

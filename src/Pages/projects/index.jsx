@@ -45,7 +45,7 @@ const Projects = () => {
                      return (
                         el.img.map((i) => {
                           return (<div key={i.id}>
-                            <div className=" L-slider-img" style={{
+                            <div className=" L-slider-img G-background-cover" style={{
                               backgroundImage: `url('${i.img}')`,
                             }}></div>
                           </div>);

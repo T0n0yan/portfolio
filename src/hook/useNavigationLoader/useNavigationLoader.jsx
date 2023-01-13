@@ -4,6 +4,7 @@ import {useLocation} from "react-router-dom";
 const useNavigationLoader = () => {
     const location = useLocation()
     const [isLoading, setIsLoading] = useState(false)
+   
     useEffect(() => {
         setIsLoading(true)
         let myTimeOut = setTimeout(() => {
