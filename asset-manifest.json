@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f31410a9.css",
-    "main.js": "/portfolio/static/js/main.2ace1d6c.js",
+    "main.css": "/portfolio/static/css/main.7112ae34.css",
+    "main.js": "/portfolio/static/js/main.5d9637ea.js",
     "static/media/todo_main.png": "/portfolio/static/media/todo_main.c1d7475c7039c2e6aa78.png",
     "static/media/naviagtorReloadFulll.jpg": "/portfolio/static/media/naviagtorReloadFulll.f8771b4f386fa4cc8483.jpg",
     "static/media/zayshop_shop.png": "/portfolio/static/media/zayshop_shop.87b1dbe8e329f01300d2.png",
@@ -26,6 +26,7 @@
     "static/media/PassionOne-Bold.ttf": "/portfolio/static/media/PassionOne-Bold.6cbab5ccd7e564c52036.ttf",
     "static/media/PassionOne-Black.ttf": "/portfolio/static/media/PassionOne-Black.5f79899dac2d04fae688.ttf",
     "static/media/skills-background-photo.jpg": "/portfolio/static/media/skills-background-photo.d4f21e0a8e399817a56f.jpg",
+    "static/media/Armenian.OTF": "/portfolio/static/media/Armenian.4e844f66acb184b20608.OTF",
     "static/media/admin_login.png": "/portfolio/static/media/admin_login.0481fb889c1358053dc5.png",
     "static/media/icomoon.eot?flch8f": "/portfolio/static/media/icomoon.057f46c7a0c0e9541e33.eot",
     "static/media/icomoon.woff?flch8f": "/portfolio/static/media/icomoon.f8e1a97fae73d103a58b.woff",
@@ -36,11 +37,11 @@
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
-    "main.f31410a9.css.map": "/portfolio/static/css/main.f31410a9.css.map",
-    "main.2ace1d6c.js.map": "/portfolio/static/js/main.2ace1d6c.js.map"
+    "main.7112ae34.css.map": "/portfolio/static/css/main.7112ae34.css.map",
+    "main.5d9637ea.js.map": "/portfolio/static/js/main.5d9637ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.f31410a9.css",
-    "static/js/main.2ace1d6c.js"
+    "static/css/main.7112ae34.css",
+    "static/js/main.5d9637ea.js"
   ]
 }
