@@ -17,7 +17,7 @@ export const ProjectsData = [
     }, {
       id: 5, img: ProjectsImagesData.zayshop_product2,
     }],
-    description: "about_me",
+    description: "zey_shop",
     link       : "",
   },
   {
@@ -34,7 +34,7 @@ export const ProjectsData = [
     }, {
       id: 10, img: ProjectsImagesData.admin_crud,
     }],
-    description: 'about_me',
+    description: 'admin',
     
     link: "",
     
@@ -44,7 +44,7 @@ export const ProjectsData = [
     img        : [{
       id: 11, img: ProjectsImagesData.todo_main,
     }],
-    description: "about_me",
+    description: "todo",
     link       : "",
     
   },

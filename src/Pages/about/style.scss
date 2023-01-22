@@ -1,45 +1,64 @@
 .L-about-me-container {
   width       : 100%;
   height      : 100%;
-	padding-top: 200px;
+  padding-top : 150px;
   font-family : 'JetBrains Mono', serif;
+  background  : rgb(37, 93, 170);
+  background  : -moz-linear-gradient(90deg, rgba(37, 93, 170, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(37, 93, 170, 1) 100%);
+  background  : -webkit-linear-gradient(90deg, rgba(37, 93, 170, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(37, 93, 170, 1) 100%);
+  background  : linear-gradient(90deg, rgba(37, 93, 170, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(37, 93, 170, 1) 100%);
+  filter      : progid:DXImageTransform.Microsoft.gradient(startColorstr="#255daa", endColorstr="#255daa", GradientType=1);
 
   .L-about-wrapper {
-	width      : 100%;
+	width : 100%;
+
 	.L-about-description {
 	  width : 100%;
 
-	  .L-img-container {
-		max-width : 400px;
-		width     : 100%;
-		height    : 700px;
+	  .L-my-img {
+		margin   : 0 auto;
+		width    : 500px;
+		height   : 600px;
+		position : relative;
 
-		.L-my-img {
-		  width  : 100%;
-		  height : 100%;
-		}
+	  }
+
+	  .L-img-container {
+		width : 100%;
+
 	  }
 
 	  .L-about-title {
-		width  : 50%;
-		margin : 0 auto;
+		width   : 100%;
+		padding : 30px 0;
 
-		h1 {
-		  font-size   : 100px;
+		.L-name-surname {
+		  font-family : "Arial Black";
+		  font-size   : 80px;
 		  color       : white;
 		  text-shadow : 0 0 20px black;
 
 		}
 
-		h3 {
-		  margin-top : 30px;
-		  font-size  : 40px;
-		}
+		.L-about-me {
+		  /* From https://css.glass */
+		  background              : rgba(255, 255, 255, 0.35);
+		  border-radius           : 16px;
+		  box-shadow              : 0 4px 30px rgba(0, 0, 0, 0.1);
+		  backdrop-filter         : blur(5.1px);
+		  -webkit-backdrop-filter : blur(5.1px);
+		  margin                  : 30px 0;
+		  text-align              : start;
+		  .L-about-me-title {
+			font-size : 40px;
+			padding: 10px 0 0 30px;
+		  }
 
-		p {
-		  margin-top : 30px;
-		  font-size  : 30px;
-
+		  .L-about-me-desc {
+			display   : block;
+			font-size : 30px;
+			padding   : 30px;
+		  }
 		}
 	  }
 	}

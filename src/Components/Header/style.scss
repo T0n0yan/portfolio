@@ -144,7 +144,26 @@
 }
 .L-languages-cont {
   .selectBox {
+    background-color: orange;
+    width: 200px;
 
+  }
+  option{
+    background: transparent !important;
+    list-style-type: none;
+    opacity: 0;
+    position : relative;
+    &:nth-child(1){
+      &:after{
+        width: 15px;
+        height : 15px;
+        position : absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        background-color : red;
+      }
+    }
   }
 }
 .L-header-active {

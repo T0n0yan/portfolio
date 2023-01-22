@@ -21,7 +21,7 @@ const Home = () => {
           </div>
         </div>
         <div className="L-introducing-container G-flex G-justify-center G-flex-column G-align-center">
-          <h1>{t('hey! i\'m Davit')} </h1>
+          <h1>{t('welcome_note')} </h1>
         </div>
       </div>
     </main>

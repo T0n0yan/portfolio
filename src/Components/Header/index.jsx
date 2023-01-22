@@ -6,7 +6,7 @@ import logoSound from "../../assets/sounds/checkpoint.mp3";
 import hoverSoundMenu from "../../assets/sounds/hover.mp3";
 import "../../i18n/i18next";
 import "./style.scss";
-
+import amFlag from "../../assets/images/flags/am.png";
 
 const Header = () => {
   const {t, i18n} = useTranslation();
@@ -76,16 +76,17 @@ const Header = () => {
              </ul>
            </nav>
            <div className="L-languages-cont G-flex  G-align-center G-justify-center G-flex-column">
-             <select  id="selectBox" onChange={(e) => {
+             <select id="selectBox" onChange={(e) => {
                handleChangeLng();
              }}>
-               <option value="en">
-                 EN
+               <option value="en" className="G-background-cover AAAAA"
+                       style={{backgroundImage: `url('${amFlag}')`, width: "15px", height: "15px"}}>
+                 s
                </option>
-               <option value="ru">
+               <option value="ru" className="G-background-cover AAAAA">
                  RU
                </option>
-               <option value="hy">
+               <option value="hy" className="G-background-cover AAAAA">
                  HY
                </option>
              </select>
