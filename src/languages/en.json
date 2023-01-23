@@ -5,8 +5,21 @@
   "contacts": "Contacts",
   "welcome_note": "Hey ! I'm Davit",
   "name_surname": "Davit Tonoyan",
-  "about_me_content": "My name is Davit Tonoyan, I was born on January 1, 1999.\nI studied at school No. 24 named after S. Spandaryan (2005-2007), school No. 1 named after R. Yeghoyan (2007-2010), V. Bakhshyan School No. 2 (2010-2014) and Armavir High School No. 4.\nI graduated from the State University of Economics of Armenia (2016-2020).\nI graduated from Parakari H. Edgaryan School of Art, Department of Fine Arts: (2007-2012).\nI graduated from the clarinet department of the 1st music school for the city of Armavir (2012-2016).\n  I have been engaged in programming for 1 year.",
+  "about_me_content": "My name is Davit Ashot Tonoyan. I was born on 01.01.1999 in the city of Armavir, Armavir region.",
   "short_about_me": "Shortly about me",
+  "education": "Education",
+  "school" : "In 2005-2016, I studied and graduated from Armavir N4 High School.",
+  "shvi": "shvi",
+  "klarnet": "2011-2015 I studied and graduated from the clarinet department of the Armavir Music School.",
+  "university": "",
+  "teache_me": "05.10.2021-05.04.2022 took courses in programming.",
+  "job": "06.01.2022-12.30.2022 worked at Group 404 as a Frontend Developer on the creation of the company's main website and freelanced 3 projects in the Russian market.",
+
+
+
+
+
+
   "zey_shop": "That is Shop Site",
   "admin": "This is Admin page",
   "todo": "This is todo page"

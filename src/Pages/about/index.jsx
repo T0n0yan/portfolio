@@ -17,13 +17,19 @@ const About = () => {
                 style={{backgroundImage: `url('${myImg}')`}}
              />
            </div>
-           <div className="L-about-title ">
-             <h2 className='L-name-surname'>{t("name_surname")} </h2>
-             <div className="L-about-me">
+           <div className="L-about-me ">
+             <h2 className="L-name-surname">{t("name_surname")} </h2>
+             <div className="L-about-title">
                <h3 className="L-about-me-title">{t("short_about_me")}</h3>
                <span className="L-about-me-desc">{t("about_me_content")}</span>
-             </div>
-             <div>
+               <ul style={{listStyleType: "disc"}}>
+                 <li>{t("school")}</li>
+                 <li>{t("shvi")}</li>
+                 <li>{t("klarnet")}</li>
+                 <li>{t("university")}</li>
+                 <li>{t("teache_me")}</li>
+               </ul>
+               <p>{t("job")}</p>
              </div>
            </div>
          </div>
