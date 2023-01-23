@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.35311ce7.css",
-    "main.js": "/portfolio/static/js/main.7dc90392.js",
+    "main.css": "/portfolio/static/css/main.8ba3526c.css",
+    "main.js": "/portfolio/static/js/main.236cbd3f.js",
     "static/media/todo_main.png": "/portfolio/static/media/todo_main.c1d7475c7039c2e6aa78.png",
     "static/media/naviagtorReloadFulll.jpg": "/portfolio/static/media/naviagtorReloadFulll.f8771b4f386fa4cc8483.jpg",
     "static/media/zayshop_shop.png": "/portfolio/static/media/zayshop_shop.87b1dbe8e329f01300d2.png",
@@ -37,11 +37,11 @@
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
-    "main.35311ce7.css.map": "/portfolio/static/css/main.35311ce7.css.map",
-    "main.7dc90392.js.map": "/portfolio/static/js/main.7dc90392.js.map"
+    "main.8ba3526c.css.map": "/portfolio/static/css/main.8ba3526c.css.map",
+    "main.236cbd3f.js.map": "/portfolio/static/js/main.236cbd3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.35311ce7.css",
-    "static/js/main.7dc90392.js"
+    "static/css/main.8ba3526c.css",
+    "static/js/main.236cbd3f.js"
   ]
 }
