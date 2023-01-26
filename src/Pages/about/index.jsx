@@ -1,6 +1,6 @@
 import React from "react";
 import {useTranslation} from "react-i18next";
-import myImg from "../../assets/images/My Img.png";
+import myImg from "../../assets/images/about img.jpg";
 import "./style.scss";
 
 
@@ -13,7 +13,7 @@ const About = () => {
          <div className="L-about-description  ">
            <div className="L-img-container">
              <div
-                className="L-my-img G-background-contain"
+                className="L-my-img G-background-cover"
                 style={{backgroundImage: `url('${myImg}')`}}
              />
            </div>

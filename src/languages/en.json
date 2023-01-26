@@ -8,19 +8,16 @@
   "about_me_content": "My name is Davit Ashot Tonoyan. I was born on 01.01.1999 in the city of Armavir, Armavir region.",
   "short_about_me": "Shortly about me",
   "education": "Education",
-  "school" : "In 2005-2016, I studied and graduated from Armavir N4 High School.",
+  "school": "In 2005-2016, I studied and graduated from Armavir N4 High School.",
   "shvi": "shvi",
   "klarnet": "2011-2015 I studied and graduated from the clarinet department of the Armavir Music School.",
   "university": "",
   "teache_me": "05.10.2021-05.04.2022 took courses in programming.",
   "job": "06.01.2022-12.30.2022 worked at Group 404 as a Frontend Developer on the creation of the company's main website and freelanced 3 projects in the Russian market.",
-
-
-
-
-
-
   "zey_shop": "That is Shop Site",
+  "zey_shop_description": "This is a store website design. This is a test site where I tried to use and strengthen my knowledge about slides.",
   "admin": "This is Admin page",
-  "todo": "This is todo page"
+  "admin_description": "This site is intended for an online store that allows the user to register and enter the page, add products, classify them, etc. To access the site, it is necessary to visit www.crudcrud.com copy the address and put it in the \"src-routhes\" folder.",
+  "todo": "This is todo page",
+  "todo_description": "This is a ToDo list where you can add actions that need to be done in the future, mark already completed actions, change them or delete them. You can see the result above."
 }
