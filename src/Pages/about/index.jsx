@@ -23,11 +23,11 @@ const About = () => {
                <h3 className="L-about-me-title">{t("short_about_me")}</h3>
                <span className="L-about-me-desc">{t("about_me_content")}</span>
                <ul style={{listStyleType: "disc"}}>
-                 <li>{t("school")}</li>
-                 <li>{t("shvi")}</li>
-                 <li>{t("klarnet")}</li>
-                 <li>{t("university")}</li>
                  <li>{t("teache_me")}</li>
+                 <li>{t("university")}</li>
+                 <li>{t("school")}</li>
+                 <li>{t("klarnet")}</li>
+                 <li>{t("shvi")}</li>
                </ul>
                <p>{t("job")}</p>
              </div>

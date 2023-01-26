@@ -81,13 +81,13 @@ const Header = () => {
              }}>
                <option value="en" className="G-background-cover AAAAA"
                        style={{backgroundImage: `url('${amFlag}')`, width: "15px", height: "15px"}}>
-                 s
+                 EN
                </option>
                <option value="ru" className="G-background-cover AAAAA">
                  RU
                </option>
                <option value="hy" className="G-background-cover AAAAA">
-                 HY
+                 AM
                </option>
              </select>
            </div>
