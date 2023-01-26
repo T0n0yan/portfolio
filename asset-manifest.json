@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.443fc12c.css",
-    "main.js": "/portfolio/static/js/main.be4c2355.js",
+    "main.css": "/portfolio/static/css/main.05569b90.css",
+    "main.js": "/portfolio/static/js/main.44a9526d.js",
     "static/media/todo_main.png": "/portfolio/static/media/todo_main.c1d7475c7039c2e6aa78.png",
     "static/media/naviagtorReloadFulll.jpg": "/portfolio/static/media/naviagtorReloadFulll.f8771b4f386fa4cc8483.jpg",
+    "static/media/about img.jpg": "/portfolio/static/media/about img.d6740057443c9be35a4a.jpg",
     "static/media/zayshop_shop.png": "/portfolio/static/media/zayshop_shop.87b1dbe8e329f01300d2.png",
     "static/media/zayshop_product2.png": "/portfolio/static/media/zayshop_product2.7442bc0d7a37c8cd2465.png",
     "static/media/zayshop_home.png": "/portfolio/static/media/zayshop_home.8e29e13e56596136545f.png",
-    "static/media/My Img.png": "/portfolio/static/media/My Img.ecb67f329c0a66e76e6f.png",
     "static/media/admin_crud.png": "/portfolio/static/media/admin_crud.7233fa35c22c60b9bb57.png",
     "static/media/reloadeSound.mp3": "/portfolio/static/media/reloadeSound.082ce57f1d2025002ad5.mp3",
     "static/media/admin_product.png": "/portfolio/static/media/admin_product.dad7a8ce653d8eac52ce.png",
@@ -37,11 +37,11 @@
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
-    "main.443fc12c.css.map": "/portfolio/static/css/main.443fc12c.css.map",
-    "main.be4c2355.js.map": "/portfolio/static/js/main.be4c2355.js.map"
+    "main.05569b90.css.map": "/portfolio/static/css/main.05569b90.css.map",
+    "main.44a9526d.js.map": "/portfolio/static/js/main.44a9526d.js.map"
   },
   "entrypoints": [
-    "static/css/main.443fc12c.css",
-    "static/js/main.be4c2355.js"
+    "static/css/main.05569b90.css",
+    "static/js/main.44a9526d.js"
   ]
 }
