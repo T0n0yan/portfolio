@@ -10,23 +10,23 @@
   @include screen-max-width-991 {
 	padding-top : 150px;
   }
-  @include screen-max-width-767 {
-	padding-top : 180px;
-  }
-  @include screen-max-width-576 {
-	padding-top : 200px;
-  }
+
 
   .L-skills-container {
 	margin    : 0 auto;
 	position  : relative;
-	max-width : 700px;
+	max-width : 650px;
 	width     : 90%;
-	height    : 750px;
+	height    : 700px;
+	@include screen-max-width-1200 {
+	  max-width : 600px;
+	  width     : 100%;
+	  height    : 600px;
+	}
 	@include screen-max-width-991 {
-	  max-width  : 600px;
+	  max-width  : 550px;
 	  width      : 100%;
-	  max-height : 700px;
+	  max-height : 650px;
 	}
 	@include screen-max-width-576 {
 	  max-height : 500px;
@@ -46,12 +46,15 @@
 	  box-shadow              : 0 4px 30px rgba(0, 0, 0, 0.21);
 	  backdrop-filter         : blur(13.8px);
 	  -webkit-backdrop-filter : blur(13.8px);
+	  @include screen-max-width-576 {
+		height : 450px;
+	  }
 
 	  .L-logo-box {
 		width                   : 85%;
 		margin                  : 20px auto;
-		padding                 : 20px 15px;
-		height                  : 500px;
+		padding                 : 15px 15px;
+		height                  : 550px;
 		border-radius           : 25px;
 		overflow                : hidden;
 		background              : rgba(255, 255, 255, 0.02);
@@ -63,8 +66,23 @@
 		1px 1px 50px rgba(255, 255, 255, 1);
 		box-shadow              : inset 2px 20px 50px rgba(154, 147, 140, 0.5),
 		1px 1px 50px rgba(255, 255, 255, 1);
+
+
+		@include screen-max-width-1200 {
+		}
 		@include screen-max-width-767 {
 		  width : 90%;
+		}
+		@include screen-max-width-576 {
+		  height : 300px;
+		}
+
+		.L-skill-box-items {
+		  @include screen-max-width-1200 {
+			width  : 300px;
+			height : 250px;
+			border : 1px solid red;
+		  }
 		}
 	  }
 
@@ -73,6 +91,7 @@
 		margin     : 0 auto;
 		max-width  : 400px;
 		width      : 100%;
+
 
 		.skill-animated-logo {
 		  animation : rotateLogo 10s linear infinite;
@@ -87,6 +106,10 @@
 			bottom        : -50px;
 			border-radius : 50%;
 			filter        : blur(100%);
+			@include screen-max-width-1200 {
+			  width : 50%;
+			  left  : 25%;
+			}
 			@include screen-max-width-576 {
 			  width : 50%;
 			  left  : 25%;
@@ -95,12 +118,13 @@
 
 		  span {
 			font-size : 300px;
+			@include screen-max-width-1200 {
+			  font-size : $font-size-200;
+			}
 			@include screen-max-width-991 {
-			  font-size : $font-size-250;
+			  font-size : $font-size-200;
 			}
-			@include screen-max-width-767 {
-			  font-size : $font-size-250;
-			}
+
 			@include screen-max-width-576 {
 			  font-size : $font-size-150;
 			}

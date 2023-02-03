@@ -8,6 +8,7 @@ import "../../i18n/i18next";
 import "./style.scss";
 import amFlag from "../../assets/images/flags/am.png";
 
+
 const Header = () => {
   const {t, i18n} = useTranslation();
   const location = useLocation();
@@ -17,8 +18,9 @@ const Header = () => {
   const [lng, setLng] = useState("en");
   const [lngFont, setLngFont] = useState("");
   
-  const handleClick = () => {
+  const handleClick = (e) => {
     setMenu(!menu);
+    e.stopPropagation();
   };
   const logoSoudeOn = () => {
     checkSound.play();
@@ -30,20 +32,26 @@ const Header = () => {
     i18n.changeLanguage(lng);
     localStorage.setItem("lng", lng);
   };
+  const handleBlur = (event) => {
+    if (!event.currentTarget.contains(event.relatedTarget)) {
+      setMenu(false);
+      console.log(1)
+    }
+  };
   const handleChangeLng = (el) => {
     let selectBox = document.getElementById("selectBox");
     const selectedValue = selectBox.options[selectBox.selectedIndex].value;
     changeLng(selectedValue);
     setLngFont(selectedValue);
   };
+  
   return (
-     <>
-       <div className="L-burger G-flex" onClick={handleClick}>
-         <span className={`burger-line ${menu ? "burger-active" : ""}`}/>
+     <div onBlur={handleBlur}>
+       <div className="L-burger G-flex" onClick={handleClick} onBlur={() => console.log(1)}>
+         <span className={`burger-line ${menu ? "burger-active" : "burger-disable"}`}/>
        </div>
-       <header
-          className={`L-header-container ${menu ? "L-header-active" : ""} ${lngFont === "hy" ? "L-lng-font" : ""} `}>
-         <div className="G-container L-header-wrapper G-flex G-justify-between G-align-center">
+       <header className={`L-header-container ${menu ? "L-header-active" : ""} ${lngFont === "hy" ? "L-lng-font" : ""} `}>
+         <div className="G-container L-header-wrapper G-flex G-justify-between G-align-center" >
            <div className="L-logo-container " onClick={() => logoSoudeOn()}>
              <NavLink
                 to="/home"
@@ -79,21 +87,22 @@ const Header = () => {
              <select id="selectBox" onChange={(e) => {
                handleChangeLng();
              }}>
-               <option value="en" className="G-background-cover AAAAA"
+               <option value="en" className="G-background-cover "
                        style={{backgroundImage: `url('${amFlag}')`, width: "15px", height: "15px"}}>
                  EN
                </option>
-               <option value="ru" className="G-background-cover AAAAA">
+               <option value="ru" className="G-background-cover ">
                  RU
                </option>
-               <option value="hy" className="G-background-cover AAAAA">
+               <option value="hy" className="G-background-cover ">
                  AM
                </option>
              </select>
            </div>
          </div>
        </header>
-     </>);
+     </div>
+  );
 };
 
 export default Header;

@@ -21,7 +21,11 @@
   background-size     : cover;
   background-repeat   : no-repeat;
 }
-
+.G-background-100 {
+  background-position : bottom;
+  background-size     :100%;
+  background-repeat   : no-repeat;
+}
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background    : $grey-10;

@@ -6,10 +6,10 @@
   height      : 100vh;
   padding-top : 200px;
   @include screen-max-width-767 {
-    padding-top : 250px;
+    padding-top : 200px;
   }
   @include screen-max-width-576 {
-    padding-top : 220px;
+    padding-top : 150px;
   }
 
   .L-home-wrapper {
