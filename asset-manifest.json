@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.209280ad.css",
+    "main.css": "/portfolio/static/css/main.cd091c35.css",
     "main.js": "/portfolio/static/js/main.e0b3a985.js",
     "static/media/My Img.png": "/portfolio/static/media/My Img.17a423e3a33577143294.png",
     "static/media/todo_main.png": "/portfolio/static/media/todo_main.c1d7475c7039c2e6aa78.png",
@@ -12,7 +12,7 @@
     "static/media/zayshop_shop.png": "/portfolio/static/media/zayshop_shop.87b1dbe8e329f01300d2.png",
     "static/media/zayshop_product2.png": "/portfolio/static/media/zayshop_product2.7442bc0d7a37c8cd2465.png",
     "static/media/zayshop_home.png": "/portfolio/static/media/zayshop_home.8e29e13e56596136545f.png",
-    "static/media/naviagtorReload-767jpg.jpg": "/portfolio/static/media/naviagtorReload-767jpg.c34d2752c8406c340d40.jpg",
+    "static/media/naviagtorReload-767jpg.jpg": "/portfolio/static/media/naviagtorReload-767jpg.bf3603ce328bb8d366e4.jpg",
     "static/media/s-house4.png": "/portfolio/static/media/s-house4.464c323e17dc953113e0.png",
     "static/media/admin_crud.png": "/portfolio/static/media/admin_crud.7233fa35c22c60b9bb57.png",
     "static/media/reloadeSound.mp3": "/portfolio/static/media/reloadeSound.082ce57f1d2025002ad5.mp3",
@@ -43,11 +43,11 @@
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
-    "main.209280ad.css.map": "/portfolio/static/css/main.209280ad.css.map",
+    "main.cd091c35.css.map": "/portfolio/static/css/main.cd091c35.css.map",
     "main.e0b3a985.js.map": "/portfolio/static/js/main.e0b3a985.js.map"
   },
   "entrypoints": [
-    "static/css/main.209280ad.css",
+    "static/css/main.cd091c35.css",
     "static/js/main.e0b3a985.js"
   ]
 }
