@@ -9,6 +9,10 @@ import zayshop_footer from "./Zay Shop/zayshop_footer.png";
 import zayshop_home from "./Zay Shop/zayshop_home.png";
 import zayshop_product2 from "./Zay Shop/zayshop_product2.png";
 import zayshop_shop from "./Zay Shop/zayshop_shop.png";
+import s_house1 from "./Simple House/s-house1.png";
+import s_house2 from "./Simple House/s-house2.png";
+import s_house3 from "./Simple House/s-house3.png";
+import s_house4 from "./Simple House/s-house4.png";
 
 
 export const ProjectsImagesData = {
@@ -23,4 +27,8 @@ export const ProjectsImagesData = {
   zayshop_footer,
   zayshop_shop,
   zayshop_product2,
+  s_house1,
+  s_house2,
+  s_house3,
+  s_house4,
 };

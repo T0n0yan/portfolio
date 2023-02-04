@@ -19,5 +19,7 @@
   "admin": "This is Admin page",
   "admin_description": "This site is intended for an online store that allows the user to register and enter the page, add products, classify them, etc. To access the site, it is necessary to visit www.crudcrud.com copy the address and put it in the \"src-routhes\" folder.",
   "todo": "This is todo page",
-  "todo_description": "This is a ToDo list where you can add actions that need to be done in the future, mark already completed actions, change them or delete them. You can see the result above."
+  "todo_description": "This is a ToDo list where you can add actions that need to be done in the future, mark already completed actions, change them or delete them. You can see the result above.",
+  "s_house_description": "angleren"
+
 }

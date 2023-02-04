@@ -7,8 +7,24 @@
   height              : 100%;
   background-image    : url('../../assets/images/naviagtorReloadFulll.jpg');
   background-position : center;
+  background-repeat   : no-repeat;
   background-size     : cover;
   z-index             : 9999;
   position            : fixed;
+  @include screen-max-width-1300 {
+	transform : scale(1);
+  }
+  @include screen-max-width-1200 {
+	transform        : scale(1);
+	background-image : url('../../assets/images/navigator-reload-991.jpg');
+  }
+  @include screen-max-width-767 {
+    background-position : center;
+    background-size : cover;
+    transform: scale(1);
+    background-image : url('../../assets/images/naviagtorReload-767jpg.jpg');
+
+  }
 }
+
 

@@ -9,7 +9,7 @@ const useNavigationLoader = () => {
         setIsLoading(true)
         let myTimeOut = setTimeout(() => {
             setIsLoading(false)
-        }, 1800)
+        }, 9800)
 
         return () => {
             clearTimeout(myTimeOut)
