@@ -11,7 +11,7 @@ const usePreloader = () => {
        let myTimeOut = setTimeout(() => {
             setTestSound(() => testSound.pause())
             setLoading(false)
-        }, 1000)
+        }, 5000)
 
         return () => {
             clearTimeout(myTimeOut)
