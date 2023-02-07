@@ -46,7 +46,7 @@ export const ProjectsData = [{
   }, {
     id: 15, img: ProjectsImagesData.s_house4,
   }],
-  description: "s-house-description",
+  description: "s_house_description",
   link       : "https://simple-house.vercel.app/",
   
 }];
