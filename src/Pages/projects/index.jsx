@@ -48,9 +48,9 @@ const Projects = () => {
             </div>
             <div className="back">
               <div className="back-content ">
-                <h2 style={{fontSize:'40px',paddingBottom:"25px"}}>{el.name}</h2>
+                <h2 >{el.name}</h2>
                 <div style={{textAlign:"start"}}>
-                  <p style={{fontSize:'25px'}}>{t(`${el.description}`)}</p>
+                  <p >{t(`${el.description}`)}</p>
                   <a href={el.link} target="_blank"> Click me</a>
                 </div>
               </div>
