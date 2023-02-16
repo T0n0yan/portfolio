@@ -32,12 +32,7 @@ const Header = () => {
     i18n.changeLanguage(lng);
     localStorage.setItem("lng", lng);
   };
-  const handleBlur = (e) => {
-    if(!e.currentTarget.contains(e.relatedTarget)) {
-      setMenu(false);
-      console.log(1);
-    }
-  };
+  
   const handleChangeLng = (el) => {
     let selectBox = document.getElementById("selectBox");
     const selectedValue = selectBox.options[selectBox.selectedIndex].value;
@@ -45,68 +40,64 @@ const Header = () => {
     setLngFont(selectedValue);
   };
   
-  
-  
   return (
      <>
-       <div onBlur={handleBlur}>
-         <div className="L-burger G-flex" onClick={handleClick} onBlur={() => console.log(1)}>
-           <span className={`burger-line ${menu ? "burger-active" : "burger-disable"}`}/>
-         </div>
-         
-         <header
-            className={`L-header-container ${menu ? "L-header-active" : ""} ${lngFont === "hy" ? "L-lng-font" : ""} `}>
-           <div className="G-container L-header-wrapper G-flex G-justify-between G-align-center">
-             <div className="L-logo-container " onClick={() => logoSoudeOn()}>
-               <NavLink
-                  to="/home"
-                  className="L-logo G-background-contain"
-                  style={{backgroundImage: `url('${logo}')`}}
-               ></NavLink>
-             </div>
-             <nav className="L-nav-container  G-flex G-justify-end ">
-               <ul className="L-nav-lists G-flex G-align-center G-justify-between ">
-                 <li onClick={() => handleMouseHover()} className="Link-about">
-                   <NavLink to="/about" onClick={() => setMenu(false)}>
-                     {t("about_me")}
-                   </NavLink>
-                 </li>
-                 <li onClick={() => handleMouseHover()} className="Link-skills">
-                   <NavLink to="/skills" onClick={() => setMenu(false)}>
-                     {t("skills")}
-                   </NavLink>
-                 </li>
-                 <li onClick={() => handleMouseHover()} className="Link-projects">
-                   <NavLink to="/projects" onClick={() => setMenu(false)}>
-                     {t("projects")}
-                   </NavLink>
-                 </li>
-                 <li onClick={() => handleMouseHover()} className="Link-contacts">
-                   <NavLink to="/contacts" onClick={() => setMenu(false)}>
-                     {t("contacts")}
-                   </NavLink>
-                 </li>
-               </ul>
-             </nav>
-             <div className="L-languages-cont G-flex  G-align-center G-justify-center G-flex-column">
-               <select id="selectBox" onChange={(e) => {
-                 handleChangeLng();
-               }}>
-                 <option value="en" className="G-background-cover "
-                         style={{backgroundImage: `url('${amFlag}')`, width: "15px", height: "15px"}}>
-                   EN
-                 </option>
-                 <option value="ru" className="G-background-cover ">
-                   RU
-                 </option>
-                 <option value="hy" className="G-background-cover ">
-                   AM
-                 </option>
-               </select>
-             </div>
-           </div>
-         </header>
+       <div className="L-burger G-flex" onClick={handleClick} onBlur={() => console.log(1)}>
+         <span className={`burger-line ${menu ? "burger-active" : "burger-disable"}`}/>
        </div>
+       
+       <header
+          className={`L-header-container ${menu ? "L-header-active" : ""} ${lngFont === "hy" ? "L-lng-font" : ""} `}>
+         <div className="G-container L-header-wrapper G-flex G-justify-between G-align-center">
+           <div className="L-logo-container " onClick={() => logoSoudeOn()}>
+             <NavLink
+                to="/home"
+                className="L-logo G-background-contain"
+                style={{backgroundImage: `url('${logo}')`}}
+             ></NavLink>
+           </div>
+           <nav className="L-nav-container  G-flex G-justify-end ">
+             <ul className="L-nav-lists G-flex G-align-center G-justify-between ">
+               <li onClick={() => handleMouseHover()} className="Link-about">
+                 <NavLink to="/about" onClick={() => setMenu(false)}>
+                   {t("about_me")}
+                 </NavLink>
+               </li>
+               <li onClick={() => handleMouseHover()} className="Link-skills">
+                 <NavLink to="/skills" onClick={() => setMenu(false)}>
+                   {t("skills")}
+                 </NavLink>
+               </li>
+               <li onClick={() => handleMouseHover()} className="Link-projects">
+                 <NavLink to="/projects" onClick={() => setMenu(false)}>
+                   {t("projects")}
+                 </NavLink>
+               </li>
+               <li onClick={() => handleMouseHover()} className="Link-contacts">
+                 <NavLink to="/contacts" onClick={() => setMenu(false)}>
+                   {t("contacts")}
+                 </NavLink>
+               </li>
+             </ul>
+           </nav>
+           <div className="L-languages-cont G-flex  G-align-center G-justify-center G-flex-column">
+             <select id="selectBox" onChange={(e) => {
+               handleChangeLng();
+             }}>
+               <option value="en" className="G-background-cover "
+                       style={{backgroundImage: `url('${amFlag}')`, width: "15px", height: "15px"}}>
+                 EN
+               </option>
+               <option value="ru" className="G-background-cover ">
+                 RU
+               </option>
+               <option value="hy" className="G-background-cover ">
+                 AM
+               </option>
+             </select>
+           </div>
+         </div>
+       </header>
      </>
   );
 };

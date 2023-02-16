@@ -14,6 +14,7 @@
 	margin    : 0 auto;
 	max-width : 600px;
 	width     : 100%;
+
 	@include screen-max-width-1300 {
 	  max-width : 550px;
 	  height    : 550px;
@@ -38,27 +39,36 @@
 	}
 
 	.L-map-box {
-	  width         : 100%;
-	  position      : relative;
-	  max-width     : 600px;
-	  height        : 600px;
-	  border        : 25px solid #f59dda;
-	  border-radius : 50%;
-	  margin        : 0 auto;
-	  overflow      : hidden;
+	  width                 : 100%;
+	  position              : relative;
+	  max-width             : 600px;
+	  height                : 600px;
+	  border                : 25px solid #f59dda;
+	  border-radius         : 50%;
+	  -webkit-border-radius : 50%;
+	  margin                : 0 auto;
+	  overflow              : hidden;
+
 	  @include screen-max-width-1300 {
 		max-width : 550px;
 		height    : 550px;
 	  }
 	  @include screen-max-width-1200 {
-		max-width : 500px;
-		height    : 500px;
-		border    : 20px solid #f59dda;
+		max-width      : 500px;
+		height         : 500px;
+		border         : 20px solid #f59dda;
+		-webkit-border : 20px solid #f59dda;
 	  }
 	  @include screen-max-width-991 {
 		max-width : 500px;
 		height    : 500px;
 		border    : 15px solid #f59dda;
+	  }
+	  @include galaxy-fold {
+		max-width: 350px;
+		width: 100%;
+		height: 350px;
+		border: 10px solid #f59dda;
 	  }
 	  @include screen-max-width-576 {
 		max-width : 400px;
@@ -90,6 +100,11 @@
 		width  : 45px;
 		height : 45px;
 	  }
+	  @include galaxy-fold {
+		top: 55px;
+		width: 50px;
+		height: 50px;
+	  }
 	}
 
 	.L-map-mission {
@@ -100,6 +115,10 @@
 	  -webkit-text-stroke : 2px black;
 	  font-size           : $font-size-80;
 	  z-index             : 1;
+	  @include galaxy-fold {
+		left: 65px;
+		font-size: $font-size-50;
+	  }
 	  @include screen-max-width-576 {
 		font-size : $font-size-48;
 		left      : -10px;
@@ -118,6 +137,7 @@
 	width     : max-content;
 	font-size : $font-size-32;
 	display   : flex;
+
 	@include screen-max-width-1200 {
 	  top       : 120px;
 	  font-size : $font-size-30;
@@ -170,29 +190,31 @@
 	}
 
 	.L-socials-block {
-	  width         : 120px;
-	  height        : 120px;
-	  background    : rgb(253, 133, 253);
-	  background    : linear-gradient(
+	  width                 : 120px;
+	  height                : 120px;
+	  background            : rgb(253, 133, 253);
+	  background            : linear-gradient(
 					  0deg,
 					  rgba(253, 133, 253, 1) 0%,
 					  rgba(95, 194, 236, 1) 100%,
 					  rgba(58, 189, 252, 1) 100%
 	  );
-	  border-radius : 0 15px 15px 15px;
-	  position      : relative;
-	  border        : 1px solid white;
+	  border-radius         : 0 15px 15px 15px;
+	  -webkit-border-radius : 0 15px 15px 15px;
+	  position              : relative;
+	  border                : 1px solid white;
 
 	  .L-slider-cont {
-		position      : absolute;
-		width         : 110px;
-		height        : 85px;
-		top           : 3.5%;
-		left          : 3.5%;
-		background    : rgba($color : white, $alpha : 0.3);
-		border-radius : 0 15px 15px 15px;
-		box-shadow    : 0 0 -15px #0066ff;
-		border        : 1px solid rgba(255, 255, 255, 1);
+		position              : absolute;
+		width                 : 110px;
+		height                : 85px;
+		top                   : 3.5%;
+		left                  : 3.5%;
+		background            : rgba($color : white, $alpha : 0.3);
+		border-radius         : 0 15px 15px 15px;
+		-webkit-border-radius : 0 15px 15px 15px;
+		box-shadow            : 0 0 -15px #0066ff;
+		border                : 1px solid rgba(255, 255, 255, 1);
 
 		.sliderBlock {
 		  a {
@@ -219,9 +241,10 @@
 
 
 		  &:hover {
-			color            : #d14836;
-			border-radius    : 5px;
-			background-color : white;
+			color                 : #d14836;
+			border-radius         : 5px;
+			-webkit-border-radius : 5px;
+			background-color      : white;
 		  }
 		}
 

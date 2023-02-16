@@ -31,12 +31,10 @@ const Projects = () => {
   
   return (<div className="L-projects-wrapper">
     <div className="G-container">
-  
       <div className="L-projects-container G-flex G-align-center G-justify-between G-flex-wrap">
         {ProjectsData.map((el) => {
             return (<div key={el.id} className="card G-flex G-flex-wrap G-text-align">
               <div className="front   G-background-cover">
-  
                 <Slider {...projects_slider} className="L-projects-slider  ">
                   {ProjectsData.map(() => {
                     return (el.img.map((i) => {
