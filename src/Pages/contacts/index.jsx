@@ -47,7 +47,7 @@ const Contacts = () => {
            <p className="L-map-mission">D</p>
          
            <div className="L-map-compass  G-background-cover" style={{backgroundImage: `url('${mapNorth}')`}}/>
-           <div className="L-map-box">
+           <div className="L-map-box G-flex G-justify-center G-align-center">
              <iframe
                 className="L-map"
                 title="Map"
