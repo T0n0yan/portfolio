@@ -42,12 +42,14 @@ const Header = () => {
   
   return (
      <>
-       <div className="L-burger G-flex" onClick={handleClick} onBlur={() => console.log(1)}>
-         <span className={`burger-line ${menu ? "burger-active" : "burger-disable"}`}/>
+       <div className="L-burger-wrapper" onClick={() => handleClick()}>
+         <div className={`L-burger ${menu ? 'L-burger-active ' : ''}`}>
+           <div className={`L-burger-line ${menu ? 'L-burger-active' : ''}`}></div>
+           <div className={`L-burger-line ${menu ? 'L-burger-active' : ''}`}></div>
+           <div className={`L-burger-line ${menu ? 'L-burger-active' : ''}`}></div>
+         </div>
        </div>
-       
-       <header
-          className={`L-header-container ${menu ? "L-header-active" : ""} ${lngFont === "hy" ? "L-lng-font" : ""} `}>
+       <header className={`L-header-container ${menu ? "L-header-active" : ""} ${lngFont === "hy" ? "L-lng-font" : ""} `}>
          <div className="G-container L-header-wrapper G-flex G-justify-between G-align-center">
            <div className="L-logo-container " onClick={() => logoSoudeOn()}>
              <NavLink

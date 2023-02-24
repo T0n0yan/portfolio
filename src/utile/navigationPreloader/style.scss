@@ -9,7 +9,7 @@
   background-position : center;
   background-repeat   : no-repeat;
   background-size     : cover;
-  z-index             : 9999;
+  z-index             : 999999999;
   position            : fixed;
   @include screen-max-width-1300 {
 	transform : scale(1);
