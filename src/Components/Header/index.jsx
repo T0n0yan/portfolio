@@ -32,14 +32,12 @@ const Header = () => {
     i18n.changeLanguage(lng);
     localStorage.setItem("lng", lng);
   };
-  
   const handleChangeLng = (el) => {
     let selectBox = document.getElementById("selectBox");
     const selectedValue = selectBox.options[selectBox.selectedIndex].value;
     changeLng(selectedValue);
     setLngFont(selectedValue);
   };
-  
   return (
      <>
        <div className="L-burger-wrapper" onClick={() => handleClick()}>
