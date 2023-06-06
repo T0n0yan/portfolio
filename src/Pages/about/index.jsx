@@ -31,7 +31,7 @@ const About = () => {
                  <li>{t("university")}</li>
                  <li>{t("school")}</li>
                  <li>{t("klarnet")}</li>
-                 <li>{t("shvi")}</li>
+                 {/*<li>{t("shvi")}</li>*/}
                </ul>
              </div>
            </div>

@@ -37,11 +37,13 @@ const Projects = () => {
               <Slider {...projects_slider} className="L-projects-slider  ">
                 {ProjectsData.map(() => {
                   return (el.img.map((i) => {
-                    return (<div key={i.id}>
-                      <div className=" L-slider-img G-background-cover" style={{
-                        backgroundImage: `url('${i.img}')`,
-                      }}></div>
-                    </div>);
+                    return (
+                       <div key={i.id}>
+                         <div className=" L-slider-img G-background-cover" style={{
+                           backgroundImage: `url('${i.img}')`,
+                         }}></div>
+                       </div>
+                    );
                   }));
                 })}
               </Slider>
